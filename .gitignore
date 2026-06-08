@@ -17,3 +17,12 @@ logs/
 *.swp
 *.tmp
 tmp/
+
+# Sensitive files / SSH keys
+sh-ed25519
+*id_rsa*
+*id_ed25519*
+*.pem
+*.key
+*.token
+*.env

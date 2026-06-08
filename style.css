@@ -363,3 +363,218 @@ footer {
   text-align: center;
   font-size: 0.85rem;
 }
+
+/* ==========================================
+   Pure Data Styling for Landing Page
+   ========================================== */
+
+body.landing-page {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: var(--font-family);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.landing-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pd-object-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Pure Data Object style */
+.pd-object {
+  position: relative;
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid var(--text-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: none;
+  z-index: 10;
+}
+
+.pd-object:active {
+  transform: scale(0.97);
+}
+
+/* PD Inlets / Outlets */
+.pd-object::before {
+  /* Inlet */
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 10px;
+  width: 8px;
+  height: 3px;
+  background-color: var(--text-color);
+}
+
+.pd-object::after {
+  /* Outlet */
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 10px;
+  width: 8px;
+  height: 3px;
+  background-color: var(--text-color);
+}
+
+/* Clickable corner (beveled top-right index) */
+.pd-clickable-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background-color: var(--text-color);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  transition: opacity 0.2s;
+}
+
+.pd-object:hover .pd-clickable-corner {
+  opacity: 0.8;
+}
+
+/* Pure Data menu */
+.pd-menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-15px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  z-index: 5;
+}
+
+.pd-menu.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* PD Message Box styling (slanted right side) */
+.pd-message {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--text-color);
+  border-right: none;
+  background-color: var(--bg-color);
+  color: var(--text-color) !important;
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  text-decoration: none !important;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 10px; /* spacing for the slant */
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.pd-message:hover {
+  background-color: var(--card-bg);
+}
+
+.pd-message:active {
+  transform: scale(0.97);
+}
+
+/* Inlet for message boxes */
+.pd-message::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 8px;
+  width: 6px;
+  height: 3px;
+  background-color: var(--text-color);
+}
+
+/* Slanted right edge */
+.pd-message::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -9px;
+  width: 9px;
+  height: 100%;
+  border-top: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  background-color: inherit;
+  transform: skewX(-20deg);
+  transform-origin: top left;
+}
+
+/* Patch cords SVG overlay */
+.patch-cords-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 1;
+}
+
+.patch-cord {
+  fill: none;
+  stroke: var(--text-color);
+  stroke-width: 1.5;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke 0.2s;
+}
+
+.pd-menu.open ~ .patch-cords-svg .patch-cord {
+  animation: draw-cord 0.4s ease-out forwards;
+}
+
+@keyframes draw-cord {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Theme selector bottom alignment */
+.landing-theme-selector {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 10;
+}

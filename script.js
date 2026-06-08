@@ -3,6 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
+  initPDMenu();
   initAudioPlayer();
 });
 
@@ -198,4 +199,95 @@ function initAudioPlayer() {
     trackNameDisplay.textContent = `[READY] ${tracks[0].title}`;
     tracks[0].element.classList.add('active');
   }
+}
+
+// ==========================================
+// 3. Pure Data Interactive Menu & Patch Cords
+// ==========================================
+function initPDMenu() {
+  const trigger = document.getElementById('binbot-trigger');
+  const menu = document.getElementById('pd-menu');
+  if (!trigger || !menu) return;
+
+  trigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = menu.classList.toggle('open');
+    trigger.setAttribute('aria-expanded', isOpen);
+    
+    if (isOpen) {
+      // Small timeout to let menu layout compute before drawing cords
+      setTimeout(drawPatchCords, 50);
+    } else {
+      const svg = document.getElementById('patch-cords');
+      if (svg) svg.innerHTML = '';
+    }
+  });
+
+  // Close menu if clicking outside
+  document.addEventListener('click', (e) => {
+    if (menu.classList.contains('open') && !trigger.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove('open');
+      trigger.setAttribute('aria-expanded', 'false');
+      const svg = document.getElementById('patch-cords');
+      if (svg) svg.innerHTML = '';
+    }
+  });
+
+  // Keyboard navigation support
+  trigger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      trigger.click();
+    }
+  });
+
+  // Recalculate patch cords on resize
+  window.addEventListener('resize', drawPatchCords);
+}
+
+function drawPatchCords() {
+  const trigger = document.getElementById('binbot-trigger');
+  const menu = document.getElementById('pd-menu');
+  const svg = document.getElementById('patch-cords');
+  if (!trigger || !menu || !svg) return;
+
+  // Clear previous cords
+  svg.innerHTML = '';
+
+  if (!menu.classList.contains('open')) return;
+
+  const svgRect = svg.getBoundingClientRect();
+  const triggerRect = trigger.getBoundingClientRect();
+  
+  // Source outlet coordinate (approx. left: 14px relative to trigger)
+  const x1 = triggerRect.left + 14 - svgRect.left;
+  const y1 = triggerRect.bottom - svgRect.top;
+
+  const menuItems = menu.querySelectorAll('.pd-message');
+  menuItems.forEach((item, index) => {
+    const itemRect = item.getBoundingClientRect();
+    // Destination inlet coordinate (approx. left: 11px relative to item)
+    const x2 = itemRect.left + 11 - svgRect.left;
+    const y2 = itemRect.top - svgRect.top;
+
+    // Create SVG path
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', `M ${x1} ${y1} L ${x2} ${y2}`);
+    path.setAttribute('class', 'patch-cord');
+    
+    // Animate drawing by calculating length
+    const length = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+    
+    svg.appendChild(path);
+    
+    // Trigger animation via transition
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        path.style.transition = 'stroke-dashoffset 0.4s ease-out';
+        path.style.strokeDashoffset = '0';
+      });
+    });
+  });
 }

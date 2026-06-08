@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>binbot ~ /blog</title>
+  <meta name="description" content="Recent transmissions and articles hosted on my Raspberry Pi.">
+  <link rel="stylesheet" href="/style.css?v=2.2">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <a href="/" class="pd-object" style="font-size: 1rem; padding: 4px 10px; text-decoration: none;">
+            binbot
+            <div class="pd-clickable-corner" style="width: 6px; height: 6px;"></div>
+          </a>
+          <span style="font-size: 1.1rem; font-weight: bold; opacity: 0.85;">~ /blog</span>
+        </div>
+        <span class="text-muted" style="font-size: 0.85rem;">transmissions: archived</span>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>01. recent transmissions</h2>
+        <p>
+          here you will find occasional thoughts, log entries, and documentation regarding systems design, retro hardware, audio recording, and minimalist programming.
+        </p>
+
+        <div style="margin-top: 2rem;">
+          <div class="post-list-item">
+            <a href="/posts/building-lightweight.html">building websites for old hardware</a>
+            <span class="post-date">2026-06-07</span>
+          </div>
+
+          <div class="post-list-item">
+            <a href="/posts/field-recordings.html">field recording in the quiet woods</a>
+            <span class="post-date">2026-05-18</span>
+          </div>
+
+          <div class="post-list-item">
+            <a href="/posts/running-on-pi.html">reviving an original 2012 raspberry pi</a>
+            <span class="post-date">2026-04-02</span>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top: 2.5rem;">
+        <h2>02. system log status</h2>
+        <pre>
+$ tail -n 5 /var/log/nginx/access.log
+127.0.0.1 - - [08/Jun/2026:13:42:01 -0400] "GET /blog HTTP/1.1" 200 1824 "-" "Mozilla/5.0"
+127.0.0.1 - - [08/Jun/2026:13:43:12 -0400] "GET /style.css HTTP/1.1" 200 4810 "-" "Mozilla/5.0"
+127.0.0.1 - - [08/Jun/2026:13:44:55 -0400] "GET /about HTTP/1.1" 200 2139 "-" "Mozilla/5.0"
+127.0.0.1 - - [08/Jun/2026:13:50:33 -0400] "GET /audio HTTP/1.1" 200 5283 "-" "Mozilla/5.0"
+        </pre>
+      </section>
+    </main>
+
+    <footer>
+      <p>served with care from a raspberry pi | <a href="https://github.com/yourusername" target="_blank">github</a> | <a href="mailto:your@email.com">email</a></p>
+      <div class="theme-selector" style="text-align: center; margin-top: 1rem; margin-bottom: 0;">
+        Theme:
+        <button class="theme-btn" data-set-theme="paper">Warm Paper</button>
+        <button class="theme-btn" data-set-theme="dark">Dark Mode</button>
+        <button class="theme-btn" data-set-theme="amber">Amber Terminal</button>
+        <button class="theme-btn" data-set-theme="green">Green Terminal</button>
+      </div>
+      <p class="text-muted" style="font-size: 0.75rem; margin-top: 1rem;">page weight: ~5.8KB | green hosting certified (700mW idle power)</p>
+    </footer>
+  </div>
+
+  <script src="/script.js?v=2.2"></script>
+</body>
+</html>
