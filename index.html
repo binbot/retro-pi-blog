@@ -3,91 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>retro_pi_server ~ /home</title>
-  <meta name="description" content="A lightweight, self-hosted retro homepage running on an old Raspberry Pi.">
-  <link rel="stylesheet" href="style.css">
+  <title>binbot</title>
+  <meta name="description" content="binbot - a lightweight digital outpost hosted on a retro Raspberry Pi.">
+  <link rel="stylesheet" href="/style.css?v=2.2">
 </head>
-<body>
-  <div class="container">
-    <div class="theme-selector">
+<body class="landing-page">
+  <div class="landing-container">
+    <div class="pd-object-wrapper">
+      <!-- Clickable Pure Data Object -->
+      <div class="pd-object" id="binbot-trigger" aria-haspopup="true" aria-expanded="false" role="button" tabindex="0">
+        binbot
+        <div class="pd-clickable-corner"></div>
+      </div>
+      
+      <!-- SVG for patch cords -->
+      <svg class="patch-cords-svg" id="patch-cords"></svg>
+      
+      <!-- Subpages Menu -->
+      <nav class="pd-menu" id="pd-menu" aria-label="Main Navigation">
+        <a href="/about/" class="pd-message" id="menu-about">about</a>
+        <a href="/audio/" class="pd-message" id="menu-audio">audio</a>
+        <a href="/blog/" class="pd-message" id="menu-blog">blog</a>
+      </nav>
+    </div>
+    
+    <!-- Theme Selector at the bottom -->
+    <div class="landing-theme-selector">
       Theme:
       <button class="theme-btn" data-set-theme="paper">Warm Paper</button>
       <button class="theme-btn" data-set-theme="dark">Dark Mode</button>
       <button class="theme-btn" data-set-theme="amber">Amber Terminal</button>
       <button class="theme-btn" data-set-theme="green">Green Terminal</button>
     </div>
-
-    <header>
-      <div class="ascii-art">
-   .~~.   .~~.    _
-  '. \ ' ' / .'  | |__  _  ___  __ _
-   .~ .~~~..~.   | '_ \| |/ _ \/ _` |
-  : .(((((()):   | |_) | |  __/ (_| |
-  ' : '   ' : '  |_.__/|_|\___|\__, |
-   '~ .~~~. ~'                 |___/
-       '~'       hosted on raspberry_pi
-      </div>
-      <h1>welcome to my digital outpost</h1>
-      <p class="text-muted">system: raspberry pi (vintage) | load: nominal | connection: low-bandwidth</p>
-      
-      <nav>
-        <a href="index.html" class="active">~/home</a>
-        <a href="audio.html">~/audio_files</a>
-        <a href="cv.html">~/curriculum_vitae</a>
-      </nav>
-    </header>
-
-    <main>
-      <section>
-        <h2>01. about me</h2>
-        <p>
-          hello! welcome to my tiny corner of the web. this website is being served directly from an old raspberry pi sitting on my bookshelf. by using raw html and minimal css, the page load size is tiny, meaning even a 15-year-old single-board computer can host it effortlessly with sub-second load times.
-        </p>
-        <p>
-          here you will find my occasional thoughts (in the blog below), some self-produced audio files and field recordings, and my curriculum vitae (cv). feel free to explore.
-        </p>
-      </section>
-
-      <section>
-        <h2>02. recent transmissions</h2>
-        
-        <div class="post-list-item">
-          <a href="posts/building-lightweight.html">building websites for old hardware</a>
-          <span class="post-date">2026-06-07</span>
-        </div>
-
-        <div class="post-list-item">
-          <a href="posts/field-recordings.html">field recording in the quiet woods</a>
-          <span class="post-date">2026-05-18</span>
-        </div>
-
-        <div class="post-list-item">
-          <a href="posts/running-on-pi.html">reviving an original 2012 raspberry pi</a>
-          <span class="post-date">2026-04-02</span>
-        </div>
-      </section>
-
-      <section>
-        <h2>03. system status</h2>
-        <pre>
-$ screenfetch -n
-OS: Raspberry Pi OS Lite (32-bit)
-Kernel: 6.1.21+ armv6l
-Uptime: 42 days, 3 hours
-CPU: BCM2835 (single core, 700 MHz)
-RAM: 184MB / 432MB (active/total)
-Web Server: nginx/1.22.1 (lightweight configuration)
-Network: DDNS-mapped residential DSL
-        </pre>
-      </section>
-    </main>
-
-    <footer>
-      <p>served with care from a raspberry pi | <a href="https://github.com/yourusername" target="_blank">github</a> | <a href="mailto:your@email.com">email</a></p>
-      <p class="text-muted" style="font-size: 0.75rem;">page weight: ~5.4KB | green hosting certified (700mW idle power)</p>
-    </footer>
   </div>
 
-  <script src="script.js"></script>
+  <script src="/script.js?v=2.2"></script>
 </body>
 </html>
