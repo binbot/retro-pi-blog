@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# IDE files
+.vscode/
+.idea/
+.project
+.settings/
+
+# Backup and temp files
+*~
+*.swp
+*.tmp
+tmp/

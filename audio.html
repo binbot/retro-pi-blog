@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>retro_pi_server ~ /audio_files</title>
+  <meta name="description" content="Audio logs and field recordings hosted on my Raspberry Pi.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="theme-selector">
+      Theme:
+      <button class="theme-btn" data-set-theme="paper">Warm Paper</button>
+      <button class="theme-btn" data-set-theme="dark">Dark Mode</button>
+      <button class="theme-btn" data-set-theme="amber">Amber Terminal</button>
+      <button class="theme-btn" data-set-theme="green">Green Terminal</button>
+    </div>
+
+    <header>
+      <div class="ascii-art">
+   .~~.   .~~.    _
+  '. \ ' ' / .'  | |__  _  ___  __ _
+   .~ .~~~..~.   | '_ \| |/ _ \/ _` |
+  : .(((((()):   | |_) | |  __/ (_| |
+  ' : '   ' : '  |_.__/|_|\___|\__, |
+   '~ .~~~. ~'                 |___/
+       '~'       hosted on raspberry_pi
+      </div>
+      <h1>audio archives</h1>
+      <p class="text-muted">system: raspberry pi (vintage) | media: local_playback</p>
+      
+      <nav>
+        <a href="index.html">~/home</a>
+        <a href="audio.html" class="active">~/audio_files</a>
+        <a href="cv.html">~/curriculum_vitae</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>01. custom retro player</h2>
+        <p>
+          this custom music player uses standard html5 audio APIs styled with simple, retro css borders. it requires no heavy third-party framework, keeping load time and execution memory near-zero for the server.
+        </p>
+
+        <!-- Hidden native audio element -->
+        <audio id="main-audio" style="display: none;"></audio>
+
+        <div class="audio-player-container">
+          <div class="player-display">
+            <div class="track-info" id="display-track-name">[NO TRACK LOADED]</div>
+            <div class="time-info">
+              <span id="display-time">00:00 / 00:00</span>
+              <span class="text-muted">44.1kHz | 16-bit</span>
+            </div>
+          </div>
+          
+          <input type="range" class="player-progress" id="player-progress" min="0" max="100" value="0">
+          
+          <div class="player-controls">
+            <button class="control-btn" id="btn-prev">[PREV]</button>
+            <button class="control-btn" id="btn-play-pause">[PLAY]</button>
+            <button class="control-btn" id="btn-stop">[STOP]</button>
+            <button class="control-btn" id="btn-next">[NEXT]</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>02. tracklist</h2>
+        <p class="text-muted">click on a track below to load and play it in the console above, or click "[download]" to grab the file.</p>
+        
+        <ul class="playlist">
+          <li class="playlist-item" data-src="media/forest-rain.mp3">
+            <span>
+              <span class="track-num">[01]</span>
+              <span class="track-title">forest rain field recording</span>
+            </span>
+            <span class="text-muted">
+              (02:14) &middot; <a href="media/forest-rain.mp3" download>[download]</a>
+            </span>
+          </li>
+          <li class="playlist-item" data-src="media/synth-sketch-05.mp3">
+            <span>
+              <span class="track-num">[02]</span>
+              <span class="track-title">synth sunset draft (op-1 pocket sketch)</span>
+            </span>
+            <span class="text-muted">
+              (01:45) &middot; <a href="media/synth-sketch-05.mp3" download>[download]</a>
+            </span>
+          </li>
+          <li class="playlist-item" data-src="media/guitar-improvisation.mp3">
+            <span>
+              <span class="track-num">[03]</span>
+              <span class="track-title">acoustic riff idea (recorded with phone mic)</span>
+            </span>
+            <span class="text-muted">
+              (00:58) &middot; <a href="media/guitar-improvisation.mp3" download>[download]</a>
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>03. deployment instruction</h2>
+        <blockquote>
+          <strong>note on file storage:</strong> to host your own audio, simply make a folder named <code>media</code> in your server root, copy your audio files there, and update the <code>data-src</code> and <code>href</code> attributes of the track list items in this <code>audio.html</code> file.
+        </blockquote>
+      </section>
+    </main>
+
+    <footer>
+      <p>served with care from a raspberry pi | <a href="https://github.com/yourusername" target="_blank">github</a> | <a href="mailto:your@email.com">email</a></p>
+      <p class="text-muted" style="font-size: 0.75rem;">page weight: ~7.2KB | green hosting certified (700mW idle power)</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
