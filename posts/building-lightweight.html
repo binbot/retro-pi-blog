@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>building websites for old hardware</title>
   <meta name="description" content="Why writing raw, lightweight HTML is a powerful design choice for vintage hardware.">
+  
   <link rel="stylesheet" href="/style.css?v=2.2">
 </head>
 <body>
   <div class="container">
-
     <header>
       <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
         <div style="display: flex; align-items: center; gap: 10px;">
@@ -28,42 +28,24 @@
     <main>
       <article>
         <h2>01. the bloat of the modern web</h2>
-        <p>
-          the average web page today is several megabytes in size. between mega-sized javascript bundles, web trackers, heavy libraries, and massive auto-playing video banners, we've created a web that requires multi-gigahertz processors and gigabytes of RAM to render.
-        </p>
-        <p>
-          but does a personal blog or CV really need all of that?
-        </p>
-
-        <h2>02. raw simplicity is elegant</h2>
-        <p>
-          when you strip away the layers of abstraction and go back to raw HTML and simple CSS, magic happens:
-        </p>
-        <ul>
-          <li><strong>instant rendering:</strong> the page is parsed and rendered in milliseconds.</li>
-          <li><strong>low bandwidth:</strong> the entire transfer size is under 10KB (excluding media).</li>
-          <li><strong>hardware longevity:</strong> a single-board computer from 2012 can serve this page to dozens of visitors concurrently without breaking a sweat.</li>
-        </ul>
-        <p>
-          by adopting a retro-terminal or classic paper aesthetic, we turn limitations into a deliberate style choice. raw monospace fonts, simple borders, and ASCII art become features rather than compromises.
-        </p>
-
-        <blockquote>
-          "simplicity is the ultimate sophistication." &mdash; unknown
-        </blockquote>
-
-        <p>
-          in future posts, i'll share my exact nginx configuration to ensure this raspberry pi remains secure and online 24/7.
-        </p>
+<p>the average web page today is several megabytes in size. between mega-sized javascript bundles, web trackers, heavy libraries, and massive auto-playing video banners, we've created a web that requires multi-gigahertz processors and gigabytes of RAM to render.</p>
+<p>but does a personal blog or CV really need all of that?</p>
+<h2>02. raw simplicity is elegant</h2>
+<p>when you strip away the layers of abstraction and go back to raw HTML and simple CSS, magic happens:</p>
+<ul>
+  <li><strong>instant rendering:</strong> the page is parsed and rendered in milliseconds.</li>
+  <li><strong>low bandwidth:</strong> the entire transfer size is under 10KB (excluding media).</li>
+  <li><strong>hardware longevity:</strong> a single-board computer from 2012 can serve this page to dozens of visitors concurrently without breaking a sweat.</li>
+</ul>
+<p>by adopting a retro-terminal or classic paper aesthetic, we turn limitations into a deliberate style choice. raw monospace fonts, simple borders, and ASCII art become features rather than compromises.</p>
+<blockquote>"simplicity is the ultimate sophistication." &mdash; unknown</blockquote>
+<p>in future posts, i'll share my exact nginx configuration to ensure this raspberry pi remains secure and online 24/7.</p>
       </article>
-
-      <div style="margin-top: 2rem;">
-        <a href="/blog/">&lt;-- back to blog</a>
-      </div>
+      <div style="margin-top: 2rem;"><a href="/blog/">&lt;-- back to blog</a></div>
     </main>
 
     <footer>
-      <p>served with care from a raspberry pi | <a href="https://github.com/yourusername" target="_blank">github</a> | <a href="mailto:your@email.com">email</a></p>
+      <p>served with care from a raspberry pi | <a href="https://github.com/binbot" target="_blank">github</a> | <a href="https://codeberg.org/binbot" target="_blank">codeberg</a> | <a href="mailto:binbot@binbot.dev">email</a></p>
       <div class="theme-selector" style="text-align: center; margin-top: 1rem; margin-bottom: 0;">
         Theme:
         <button class="theme-btn" data-set-theme="paper">Warm Paper</button>

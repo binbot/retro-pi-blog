@@ -303,6 +303,8 @@ code {
 .cv-meta {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   font-size: 0.9rem;
   border-bottom: 1px dashed var(--border-color);
   margin-bottom: 0.5rem;

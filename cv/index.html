@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>binbot ~ /cv</title>
   <meta name="description" content="My professional experience and academic background, hosted on a Raspberry Pi.">
-  <link rel="stylesheet" href="/style.css?v=2.2">
+  
+  <meta name="robots" content="noindex, nofollow">
   <style>
     @media print {
       body {
@@ -24,6 +25,7 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="/style.css?v=2.2">
 </head>
 <body>
   <div class="container">
@@ -38,75 +40,85 @@
         </div>
         <span class="text-muted" style="font-size: 0.85rem;">document: cv_resume_v2.0</span>
       </div>
+      
+      
     </header>
 
     <main>
-      <div style="text-align: right; margin-bottom: 1.5rem;">
-        <a href="javascript:window.print()">[print / save as pdf]</a>
-      </div>
-
-      <section class="cv-section">
-        <h2>01. personal data</h2>
-        <pre style="line-height: 1.4;">
-name:    alexander mercer
-contact: email: your@email.com
-         web:   yourwebsite.com (this pi!)
-         github: github.com/yourusername
-status:  software engineer & audio enthusiast
-        </pre>
-      </section>
-
-      <section class="cv-section">
-        <h2>02. employment history</h2>
-        
-        <div class="cv-item">
-          <div class="cv-meta">
-            <span class="cv-company">senior systems architect @ techcorp</span>
-            <span class="cv-date">2023 - present</span>
-          </div>
-          <p>
-            designed, deployed, and maintained microservices supporting high-traffic production workloads. scaled database operations to reduce query latencies by 30%. mentored junior staff and implemented automated testing pipelines.
-          </p>
-        </div>
-
-        <div class="cv-item">
-          <div class="cv-meta">
-            <span class="cv-company">software developer @ dev agency</span>
-            <span class="cv-date">2020 - 2023</span>
-          </div>
-          <p>
-            engineered full-stack features using node.js and python. integrated external apis and optimized frontend bundle size for low-connectivity environments. participated in Agile sprints and code reviews.
-          </p>
-        </div>
-      </section>
-
-      <section class="cv-section">
-        <h2>03. education</h2>
-        
-        <div class="cv-item">
-          <div class="cv-meta">
-            <span class="cv-company">b.s. in computer science @ state university</span>
-            <span class="cv-date">2016 - 2020</span>
-          </div>
-          <p>
-            focused on network security and systems architecture. graduated magna cum laude. thesis: "low-power server efficiency in local architectures."
-          </p>
-        </div>
-      </section>
-
-      <section class="cv-section">
-        <h2>04. technical skills</h2>
-        <pre style="line-height: 1.4;">
-languages: python, javascript (es6), shell scripting, html5/css3
-systems:   linux (debian/ubuntu/alpine), docker, nginx, git
-hardware:  raspberry pi (setup & administration), basic electronics
-interests: field recording, lo-fi production, self-hosting
-        </pre>
-      </section>
+      <article>
+        <div style="display: flex; justify-content: flex-end; align-items: baseline; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.5rem;"><a href="javascript:window.print()">[print / save as pdf]</a></div><h1 style="margin-top: 1.5rem;">Benjamin Scott</h1>
+<h3>Technical Support Leader & Operations Engineer</h3>
+<p>Technical Support Leader with a decade of experience bridging the gap between complex engineering systems and user success. Expert in multi-platform troubleshooting, workflow automation, and systems administration. Proven track record of optimizing ticketing architecture, automating away manual toil, and collaborating directly with engineering to squash bugs, maintain documentation pipelines, and ensure seamless production releases.</p>
+<hr style="border: none; border-bottom: 1px dashed var(--border-color); margin: 2rem 0;" />
+<h2>Technical Skills & Systems Matrix</h2>
+<div style="overflow-x: auto;"><table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-family: var(--font-family); font-size: 0.9rem;">
+  <thead><tr style="border-bottom: 2px solid var(--border-color); text-align: left;">
+    <th style="padding: 0.5rem; font-weight: bold;">Systems & OS</th>
+    <th style="padding: 0.5rem; font-weight: bold;">Core Tooling & Infrastructure</th>
+    <th style="padding: 0.5rem; font-weight: bold;">Automation & Frameworks</th>
+  </tr></thead><tbody>
+  <tr style="border-bottom: 1px dashed var(--border-color); vertical-align: top;">
+    <td style="padding: 0.8rem 0.5rem;"><strong>Operating Systems:</strong> Linux (Advanced Network Admin), Unix, macOS, Windows, iOS, Android</td>
+    <td style="padding: 0.8rem 0.5rem;"><strong>Technical Stack:</strong> Jira, GitHub, WordPress, Confluence, Command-line Utilities</td>
+    <td style="padding: 0.8rem 0.5rem;"><strong>Productivity & Scale:</strong> TextExpander, Keyboard Maestro, Workflow Automation</td>
+  </tr>
+  <tr style="border-bottom: 1px dashed var(--border-color); vertical-align: top;">
+    <td style="padding: 0.8rem 0.5rem;"><strong>Ticketing & Infrastructure:</strong> Zendesk Administration (300+ Users)</td>
+    <td style="padding: 0.8rem 0.5rem;"><strong>Protocols & Testing:</strong> POP/IMAP, Beta Software Testing, QA</td>
+    <td style="padding: 0.8rem 0.5rem;"><strong>Compliance & Governance:</strong> GDPR & CCPA Data Privacy Operational Integration</td>
+  </tr>
+</tbody></table></div>
+<hr style="border: none; border-bottom: 1px dashed var(--border-color); margin: 2rem 0;" />
+<h2>Professional Experience</h2>
+<h3>Tumblr, Inc. / Automattic, Inc</h3>
+<p><strong>Android Support Lead / Division Lead</strong> (Hybrid: On-site & Remote) | 2015 – 2025</p>
+<ul>
+  <li><strong>Zendesk Architecture:</strong> Headed Zendesk administration for a 300+ user account, boosting support team capacity and reducing average first-response time to under 24 hours by automating 80% of ticket workflows through triggers, macros, and system optimizations.</li>
+  <li><strong>Engineering Liaison & Bug Tracking:</strong> Improved product stability and cross-platform reliability by submitting hundreds of high-quality bug reports through Jira and collaborating directly with engineering and design teams for resolution.</li>
+  <li><strong>Documentation Pipelines:</strong> Decreased ticket volume by 20% by leading a public-facing documentation overhaul, introducing a peer-reviewed, Git-based workflow via GitHub, and upskilling the team in technical writing.</li>
+  <li><strong>Incident & VIP Management:</strong> Cut resolution time for VIP clients by 50% by initiating and championing a dedicated VIP support channel directly within engineering.</li>
+  <li><strong>Technical Onboarding:</strong> Designed and led a company-wide engineering support rotation program, handling curriculum design, technical scheduling, and delivery of group and individual training.</li>
+  <li><strong>System Internalization:</strong> Enhanced self-service efficiency and reduced ticket volume by authoring and maintaining comprehensive internal support documentation in Confluence and WordPress.</li>
+  <li><strong>Data Privacy & Compliance:</strong> Ensured rigorous compliance with global data privacy and content regulations, including GDPR and CCPA, by integrating best practices into daily support protocols and team workflows.</li>
+  <li><strong>Workflow Optimization:</strong> Increased team efficiency and ensured messaging consistency across distributed operations by optimizing response workflows using TextExpander and Keyboard Maestro.</li>
+</ul>
+<h3>Apple Inc.</h3>
+<p><strong>iOS Senior Advisor</strong> | 2014 – 2015</p>
+<ul>
+  <li><strong>Systems Escalation:</strong> Partnered with Apple software engineering teams to identify, track, and resolve systemic issues, directly impacting product performance and user experience.</li>
+  <li><strong>Automation Engineering:</strong> Increased individual efficiency and case throughput by 30% by engineering streamlined workflows with automation tools like TextExpander.</li>
+  <li><strong>Crisis & Safety Management:</strong> Served as the primary point of contact for high-stakes escalations involving carrier-related inquiries and safety concerns, ensuring rapid and compliant resolution.</li>
+</ul>
+<p><strong>iOS Technical Advisor</strong> | 2013 – 2014</p>
+<ul>
+  <li><strong>Root Cause Diagnosis:</strong> Resolved complex Apple ID and iCloud issues by diagnosing synchronization errors, account recovery challenges, and data discrepancies using remote tools and database utilities.</li>
+  <li><strong>Low-Level System Recovery:</strong> Ensured device recovery and performance by executing data backups, firmware reinstallations, and device restorations across macOS and Windows platforms.</li>
+  <li><strong>Beta Testing:</strong> Influenced successful product rollouts company-wide by participating in two beta software testing pilot programs and providing actionable technical feedback.</li>
+  <li><strong>Network Troubleshooting:</strong> Diagnosed and resolved Wi-Fi, cellular connectivity, and POP/IMAP email configuration issues across iOS hardware to restore uninterrupted network access.</li>
+</ul>
+<hr style="border: none; border-bottom: 1px dashed var(--border-color); margin: 2rem 0;" />
+<h2>Open Source & Community Leadership</h2>
+<h3>Linux4Hope</h3>
+<p><strong>Board of Directors, Chief Business Officer</strong></p>
+<ul>
+  <li><strong>Linux Environment Deployment:</strong> Directed operations centered on refurbishing and installing Linux distributions on hardware to provide computers to underserved communities.</li>
+  <li><strong>Systems Instruction:</strong> Developed training documentation and taught command-line basics, system configuration, and open-source software navigation to end-users.</li>
+  <li><strong>Technical Strategy:</strong> Oversaw organizational logistics, choosing hardware specifications and determining lightweight, functional open-source software stacks ideal for deployment.</li>
+</ul>
+<hr style="border: none; border-bottom: 1px dashed var(--border-color); margin: 2rem 0;" />
+<h2>Education, Training & Development</h2>
+<ul>
+  <li><strong>Advanced Linux Network Administration</strong> – J. Sargeant Reynolds Community College</li>
+  <li><strong>Unix I</strong> – J. Sargeant Reynolds Community College</li>
+  <li><strong>Coursework in Philosophy</strong> – Virginia Commonwealth University / Ferrum College</li>
+  <li><strong>Executive & Leadership Development</strong> – Reboot Leadership Training • Automattic, Inc Leadership Training</li>
+</ul>
+      </article>
+      
     </main>
 
     <footer>
-      <p>served with care from a raspberry pi | <a href="https://github.com/yourusername" target="_blank">github</a> | <a href="mailto:your@email.com">email</a></p>
+      <p>served with care from a raspberry pi | <a href="https://github.com/binbot" target="_blank">github</a> | <a href="https://codeberg.org/binbot" target="_blank">codeberg</a> | <a href="mailto:binbot@binbot.dev">email</a></p>
       <div class="theme-selector" style="text-align: center; margin-top: 1rem; margin-bottom: 0;">
         Theme:
         <button class="theme-btn" data-set-theme="paper">Warm Paper</button>
@@ -114,7 +126,7 @@ interests: field recording, lo-fi production, self-hosting
         <button class="theme-btn" data-set-theme="amber">Amber Terminal</button>
         <button class="theme-btn" data-set-theme="green">Green Terminal</button>
       </div>
-      <p class="text-muted" style="font-size: 0.75rem; margin-top: 1rem;">page weight: ~5.9KB | green hosting certified (700mW idle power)</p>
+      <p class="text-muted" style="font-size: 0.75rem; margin-top: 1rem;">page weight: ~5.8KB | green hosting certified (700mW idle power)</p>
     </footer>
   </div>
 

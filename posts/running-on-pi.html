@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>reviving an original 2012 raspberry pi</title>
   <meta name="description" content="A guide/reflection on setting up a lightweight web server on the original Raspberry Pi Model B.">
+  
   <link rel="stylesheet" href="/style.css?v=2.2">
 </head>
 <body>
   <div class="container">
-
     <header>
       <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
         <div style="display: flex; align-items: center; gap: 10px;">
@@ -28,43 +28,26 @@
     <main>
       <article>
         <h2>01. the hardware in question</h2>
-        <p>
-          the original raspberry pi model b, released in 2012, features a single-core armv6 processor clocked at 700 MHz and a modest 512MB (or 256MB on earlier models) of RAM.
-        </p>
-        <p>
-          by modern standards, this is slower than a smart lightbulb. trying to boot a standard desktop GUI on this machine is an exercise in extreme patience.
-        </p>
-
-        <h2>02. repurposing as a server</h2>
-        <p>
-          however, a headless linux server has very low requirements. if we strip away the desktop environment and run a minimal distribution, we can do quite a lot.
-        </p>
-        <p>
-          here is the baseline recipe i used:
-        </p>
-        <ol>
-          <li><strong>OS:</strong> Raspberry Pi OS Lite (headless, no desktop).</li>
-          <li><strong>Web Server:</strong> Nginx (configured with micro-caching).</li>
-          <li><strong>Swap:</strong> Turned off swap or moved it to a USB drive to protect the SD card from write cycles.</li>
-          <li><strong>Services:</strong> Disabled unnecessary systemd services (like bluetooth, avahi-daemon, and triggerhappy).</li>
-        </ol>
-
-        <h2>03. performance metrics</h2>
-        <p>
-          with this setup, the pi sits at an idle memory consumption of just ~42MB. serving static HTML pages takes less than 1% CPU utilization per request. pages load in under 100ms when accessed locally, and under 500ms over WAN, bottlenecked only by residential DSL upload speeds.
-        </p>
-        <p>
-          it is a testament to the longevity of linux and the efficiency of simple protocols. we don't need new hardware; we need better-optimized software.
-        </p>
+<p>the original raspberry pi model b, released in 2012, features a single-core armv6 processor clocked at 700 MHz and a modest 512MB (or 256MB on earlier models) of RAM.</p>
+<p>by modern standards, this is slower than a smart lightbulb. trying to boot a standard desktop GUI on this machine is an exercise in extreme patience.</p>
+<h2>02. repurposing as a server</h2>
+<p>however, a headless linux server has very low requirements. if we strip away the desktop environment and run a minimal distribution, we can do quite a lot.</p>
+<p>here is the baseline recipe i used:</p>
+<ol>
+  <li><strong>OS:</strong> Raspberry Pi OS Lite (headless, no desktop).</li>
+  <li><strong>Web Server:</strong> Nginx (configured with micro-caching).</li>
+  <li><strong>Swap:</strong> Turned off swap or moved it to a USB drive to protect the SD card from write cycles.</li>
+  <li><strong>Services:</strong> Disabled unnecessary systemd services (like bluetooth, avahi-daemon, and triggerhappy).</li>
+</ol>
+<h2>03. performance metrics</h2>
+<p>with this setup, the pi sits at an idle memory consumption of just ~42MB. serving static HTML pages takes less than 1% CPU utilization per request. pages load in under 100ms when accessed locally, and under 500ms over WAN, bottlenecked only by residential DSL upload speeds.</p>
+<p>it is a testament to the longevity of linux and the efficiency of simple protocols. we don't need new hardware; we need better-optimized software.</p>
       </article>
-
-      <div style="margin-top: 2rem;">
-        <a href="/blog/">&lt;-- back to blog</a>
-      </div>
+      <div style="margin-top: 2rem;"><a href="/blog/">&lt;-- back to blog</a></div>
     </main>
 
     <footer>
-      <p>served with care from a raspberry pi | <a href="https://github.com/yourusername" target="_blank">github</a> | <a href="mailto:your@email.com">email</a></p>
+      <p>served with care from a raspberry pi | <a href="https://github.com/binbot" target="_blank">github</a> | <a href="https://codeberg.org/binbot" target="_blank">codeberg</a> | <a href="mailto:binbot@binbot.dev">email</a></p>
       <div class="theme-selector" style="text-align: center; margin-top: 1rem; margin-bottom: 0;">
         Theme:
         <button class="theme-btn" data-set-theme="paper">Warm Paper</button>
@@ -72,7 +55,7 @@
         <button class="theme-btn" data-set-theme="amber">Amber Terminal</button>
         <button class="theme-btn" data-set-theme="green">Green Terminal</button>
       </div>
-      <p class="text-muted" style="font-size: 0.75rem; margin-top: 1rem;">page weight: ~5.9KB | green hosting certified (700mW idle power)</p>
+      <p class="text-muted" style="font-size: 0.75rem; margin-top: 1rem;">page weight: ~5.8KB | green hosting certified (700mW idle power)</p>
     </footer>
   </div>
 

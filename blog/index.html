@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>binbot ~ /blog</title>
   <meta name="description" content="Recent transmissions and articles hosted on my Raspberry Pi.">
+  
   <link rel="stylesheet" href="/style.css?v=2.2">
 </head>
 <body>
@@ -20,10 +21,13 @@
         </div>
         <span class="text-muted" style="font-size: 0.85rem;">transmissions: archived</span>
       </div>
+      
+      
     </header>
 
     <main>
-      <section>
+      <article>
+              <section>
         <h2>01. recent transmissions</h2>
         <p>
           here you will find occasional thoughts, log entries, and documentation regarding systems design, retro hardware, audio recording, and minimalist programming.
@@ -31,15 +35,17 @@
 
         <div style="margin-top: 2rem;">
           <div class="post-list-item">
+            <a href="/posts/2026-08-28-daily-listening.html">daily listening habits: August 28, 2026</a>
+            <span class="post-date">2026-08-28</span>
+          </div>
+          <div class="post-list-item">
             <a href="/posts/building-lightweight.html">building websites for old hardware</a>
             <span class="post-date">2026-06-07</span>
           </div>
-
           <div class="post-list-item">
             <a href="/posts/field-recordings.html">field recording in the quiet woods</a>
             <span class="post-date">2026-05-18</span>
           </div>
-
           <div class="post-list-item">
             <a href="/posts/running-on-pi.html">reviving an original 2012 raspberry pi</a>
             <span class="post-date">2026-04-02</span>
@@ -51,16 +57,18 @@
         <h2>02. system log status</h2>
         <pre>
 $ tail -n 5 /var/log/nginx/access.log
-127.0.0.1 - - [08/Jun/2026:13:42:01 -0400] "GET /blog HTTP/1.1" 200 1824 "-" "Mozilla/5.0"
-127.0.0.1 - - [08/Jun/2026:13:43:12 -0400] "GET /style.css HTTP/1.1" 200 4810 "-" "Mozilla/5.0"
-127.0.0.1 - - [08/Jun/2026:13:44:55 -0400] "GET /about HTTP/1.1" 200 2139 "-" "Mozilla/5.0"
-127.0.0.1 - - [08/Jun/2026:13:50:33 -0400] "GET /audio HTTP/1.1" 200 5283 "-" "Mozilla/5.0"
+127.0.0.1 - - [28/Aug/2026:13:42:01 -0400] "GET /blog HTTP/1.1" 200 1824 "-" "Mozilla/5.0"
+127.0.0.1 - - [28/Aug/2026:13:43:12 -0400] "GET /style.css HTTP/1.1" 200 4810 "-" "Mozilla/5.0"
+127.0.0.1 - - [28/Aug/2026:13:44:55 -0400] "GET /about HTTP/1.1" 200 2139 "-" "Mozilla/5.0"
+127.0.0.1 - - [28/Aug/2026:13:50:33 -0400] "GET /audio HTTP/1.1" 200 5283 "-" "Mozilla/5.0"
         </pre>
       </section>
+      </article>
+      
     </main>
 
     <footer>
-      <p>served with care from a raspberry pi | <a href="https://github.com/yourusername" target="_blank">github</a> | <a href="mailto:your@email.com">email</a></p>
+      <p>served with care from a raspberry pi | <a href="https://github.com/binbot" target="_blank">github</a> | <a href="https://codeberg.org/binbot" target="_blank">codeberg</a> | <a href="mailto:binbot@binbot.dev">email</a></p>
       <div class="theme-selector" style="text-align: center; margin-top: 1rem; margin-bottom: 0;">
         Theme:
         <button class="theme-btn" data-set-theme="paper">Warm Paper</button>

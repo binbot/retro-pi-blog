@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>binbot transmissions</title>
+    <link>https://binbot.dev/blog/</link>
+    <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
+    <language>en-us</language>
+    <item>
+      <title>daily listening habits: August 28, 2026</title>
+      <link>https://binbot.dev/posts/2026-08-28-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-08-28-daily-listening.html</guid>
+      <pubDate>2026-08-28</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>building websites for old hardware</title>
+      <link>https://binbot.dev/posts/building-lightweight.html</link>
+      <guid>https://binbot.dev/posts/building-lightweight.html</guid>
+      <pubDate>2026-06-07</pubDate>
+      <description>Why writing raw, lightweight HTML is a powerful design choice for vintage hardware.</description>
+    </item>
+    <item>
+      <title>field recording in the quiet woods</title>
+      <link>https://binbot.dev/posts/field-recordings.html</link>
+      <guid>https://binbot.dev/posts/field-recordings.html</guid>
+      <pubDate>2026-05-18</pubDate>
+      <description>A brief entry on the methods and equipment used to capture high-quality ambient nature soundscapes.</description>
+    </item>
+    <item>
+      <title>reviving an original 2012 raspberry pi</title>
+      <link>https://binbot.dev/posts/running-on-pi.html</link>
+      <guid>https://binbot.dev/posts/running-on-pi.html</guid>
+      <pubDate>2026-04-02</pubDate>
+      <description>A guide/reflection on setting up a lightweight web server on the original Raspberry Pi Model B.</description>
+    </item>
+  </channel>
+</rss>
