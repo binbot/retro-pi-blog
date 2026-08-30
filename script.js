@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initPDMenu();
   initAudioPlayer();
+  initBlogFilter();
 });
 
 // ==========================================
@@ -291,3 +292,78 @@ function drawPatchCords() {
     });
   });
 }
+
+// ==========================================
+// 4. Interactive Blog Tag Filtering Logic
+// ==========================================
+function initBlogFilter() {
+  const filterBar = document.getElementById('tag-filter-bar');
+  const postItems = document.querySelectorAll('.post-list-item');
+  if (!filterBar || postItems.length === 0) return;
+
+  function getActiveTag() {
+    const hash = window.location.hash || '';
+    const clean = hash.replace(/^#(tag\/)?/, '').trim().toLowerCase();
+    return clean;
+  }
+
+  function applyFilter() {
+    const activeTag = getActiveTag();
+    const filterBtns = filterBar.querySelectorAll('.tag-filter-btn');
+
+    let visibleCount = 0;
+
+    postItems.forEach(item => {
+      const tagsAttr = (item.getAttribute('data-tags') || '').toLowerCase();
+      const tags = tagsAttr.split(',').map(t => t.trim());
+
+      if (!activeTag || activeTag === 'all' || tags.includes(activeTag)) {
+        item.style.display = 'flex';
+        visibleCount++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    // Update active button styling
+    filterBtns.forEach(btn => {
+      const btnTag = (btn.getAttribute('data-tag') || '').toLowerCase();
+      if ((!activeTag && btnTag === 'all') || btnTag === activeTag) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    // Update year dividers visibility
+    document.querySelectorAll('.year-divider').forEach(divider => {
+      const year = divider.getAttribute('data-year');
+      const yearItems = document.querySelectorAll(`.post-list-item[data-year="${year}"]`);
+      let anyVisible = false;
+      yearItems.forEach(item => {
+        if (item.style.display !== 'none') anyVisible = true;
+      });
+      divider.style.display = anyVisible ? 'block' : 'none';
+    });
+  }
+
+  // Handle filter button clicks
+  filterBar.addEventListener('click', (e) => {
+    if (e.target.classList.contains('tag-filter-btn')) {
+      const tag = e.target.getAttribute('data-tag');
+      if (tag === 'all') {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      } else {
+        window.location.hash = '#' + tag;
+      }
+      applyFilter();
+    }
+  });
+
+  // Watch for hash changes (e.g. back button or clicked tag links)
+  window.addEventListener('hashchange', applyFilter);
+
+  // Initial apply on page load
+  applyFilter();
+}
+

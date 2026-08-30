@@ -580,3 +580,64 @@ body.landing-page {
   gap: 0.5rem;
   z-index: 10;
 }
+
+/* ==========================================
+   Tag Links, Filter Bar & Archive Grouping
+   ========================================== */
+.tag-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--link-color);
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  padding: 1px 6px;
+  border-radius: 2px;
+  background: var(--card-bg);
+  margin-right: 4px;
+  transition: all 0.15s ease;
+}
+
+.tag-link:hover {
+  background: var(--link-color);
+  color: var(--bg-color);
+  text-decoration: none;
+}
+
+.tag-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 1.2rem 0;
+  padding: 8px 10px;
+  border: 1px dashed var(--border-color);
+  background: var(--card-bg);
+  font-size: 0.85rem;
+}
+
+.tag-filter-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 2px 8px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.tag-filter-btn:hover,
+.tag-filter-btn.active {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+.year-divider {
+  font-size: 1.05rem;
+  font-weight: bold;
+  opacity: 0.85;
+  margin: 1.8rem 0 0.8rem 0;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px dashed var(--border-color);
+}
+
