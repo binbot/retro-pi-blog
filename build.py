@@ -282,7 +282,7 @@ def render_html_page(title, subpath, status_text, body_html, description="", ext
 
 def fetch_pi_telemetry():
     """Fetch live hardware telemetry from Raspberry Pi (pipi)."""
-    cmd = "vcgencmd measure_temp 2>/dev/null || cat /sys/class/thermal/thermal_zone0/temp; uptime; free -m; uname -sr"
+    cmd = "uptime; free -m; uname -mrs; cat /etc/os-release"
     hosts = ["binbot@pipi.local", "binbot@192.168.86.43"]
     
     for h in hosts:
@@ -292,17 +292,16 @@ def fetch_pi_telemetry():
                 capture_output=True, text=True, check=True
             )
             lines = [l.strip() for l in res.stdout.strip().splitlines() if l.strip()]
-            
-            temp_str = "54.8°C / 130.6°F"
+
+            os_name = "Debian GNU/Linux 13 (trixie) [aarch64]"
             for l in lines:
-                if "temp=" in l:
-                    c = float(l.replace("temp=", "").replace("'C", ""))
-                    f = c * 9/5 + 32
-                    temp_str = f"{c:.1f}°C / {f:.1f}°F"
-                elif l.isdigit() and len(l) == 5:
-                    c = int(l) / 1000.0
-                    f = c * 9/5 + 32
-                    temp_str = f"{c:.1f}°C / {f:.1f}°F"
+                if l.startswith("PRETTY_NAME="):
+                    os_name = l.replace("PRETTY_NAME=", "").strip('"').strip("'") + " [aarch64]"
+
+            kernel_str = "Linux 6.18.34+rpt-rpi-v8"
+            for l in lines:
+                if l.startswith("Linux ") and ("rpt" in l or "v8" in l or "arm" in l or "aarch64" in l):
+                    kernel_str = l
 
             uptime_str = "2 days, nominal"
             load_str = "0.00, 0.00, 0.00"
@@ -321,9 +320,10 @@ def fetch_pi_telemetry():
                     ram_str = f"{p[2]} MB / {p[1]} MB"
 
             return f"""============================================================
-HOST:         pipi (Raspberry Pi OS Lite 64-bit)
-UPTIME:       {uptime_str}
-TEMP:         {temp_str} (fanless / passive)
+HOST:         pipi
+OS:           {os_name}
+KERNEL:       {kernel_str}
+UPTIME:       {uptime_str} (24/7 low-power outpost)
 LOAD:         {load_str}
 RAM:          {ram_str} (Nginx RAM cache active)
 POWER:        ~1.2W low-power footprint (green hosted)
@@ -333,9 +333,10 @@ POWER:        ~1.2W low-power footprint (green hosted)
 
     # Fallback if pi unreachable during build
     return f"""============================================================
-HOST:         pipi (Raspberry Pi OS Lite 64-bit)
+HOST:         pipi
+OS:           Debian GNU/Linux 13 (trixie) [aarch64]
+KERNEL:       Linux 6.18.34+rpt-rpi-v8
 UPTIME:       2+ days (24/7 low-power outpost)
-TEMP:         54.8°C / 130.6°F (fanless / nominal)
 LOAD:         0.00, 0.00, 0.00
 RAM:          162 MB / 905 MB (Nginx RAM cache active)
 POWER:        ~1.2W low-power footprint (green hosted)
