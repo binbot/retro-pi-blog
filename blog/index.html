@@ -35,14 +35,26 @@
 
         <div class="tag-filter-bar" id="tag-filter-bar">
           <span style="font-size: 0.8rem; font-weight: bold; opacity: 0.8; margin-right: 4px;">filter:</span>
-          <button class="tag-filter-btn active" data-tag="all">[all]</button> <button class="tag-filter-btn" data-tag="audio">#audio</button> <button class="tag-filter-btn" data-tag="field-recordings">#field-recordings</button> <button class="tag-filter-btn" data-tag="hardware">#hardware</button> <button class="tag-filter-btn" data-tag="linux">#linux</button> <button class="tag-filter-btn" data-tag="listening-log">#listening-log</button> <button class="tag-filter-btn" data-tag="music">#music</button> <button class="tag-filter-btn" data-tag="nature">#nature</button> <button class="tag-filter-btn" data-tag="navidrome">#navidrome</button> <button class="tag-filter-btn" data-tag="performance">#performance</button> <button class="tag-filter-btn" data-tag="retro">#retro</button> <button class="tag-filter-btn" data-tag="self-hosting">#self-hosting</button> <button class="tag-filter-btn" data-tag="web">#web</button>
+          <button class="tag-filter-btn active" data-tag="all">[all]</button> <button class="tag-filter-btn" data-tag="alpine-linux">#alpine-linux</button> <button class="tag-filter-btn" data-tag="audio">#audio</button> <button class="tag-filter-btn" data-tag="field-recordings">#field-recordings</button> <button class="tag-filter-btn" data-tag="hardware">#hardware</button> <button class="tag-filter-btn" data-tag="linux">#linux</button> <button class="tag-filter-btn" data-tag="listening-log">#listening-log</button> <button class="tag-filter-btn" data-tag="music">#music</button> <button class="tag-filter-btn" data-tag="nature">#nature</button> <button class="tag-filter-btn" data-tag="navidrome">#navidrome</button> <button class="tag-filter-btn" data-tag="nixos">#nixos</button> <button class="tag-filter-btn" data-tag="performance">#performance</button> <button class="tag-filter-btn" data-tag="raspberry-pi">#raspberry-pi</button> <button class="tag-filter-btn" data-tag="retro">#retro</button> <button class="tag-filter-btn" data-tag="self-hosting">#self-hosting</button> <button class="tag-filter-btn" data-tag="thinkpad">#thinkpad</button> <button class="tag-filter-btn" data-tag="web">#web</button>
         </div>
 
         <div style="margin-top: 1.5rem;" id="posts-container">
 <div class="year-divider" data-year="2026">── 2026 ──</div>
+          <div class="post-list-item" data-tags="raspberry-pi,alpine-linux,self-hosting,hardware" data-year="2026">
+            <a href="/posts/borked-kernels-and-moving-to-alpine-linux.html">Borked Kernels and Moving to Alpine Linux</a>
+            <span class="post-date">2026-08-31</span>
+          </div>
+          <div class="post-list-item" data-tags="music,navidrome,listening-log" data-year="2026">
+            <a href="/posts/2026-08-29-daily-listening.html">daily listening habits: August 29, 2026</a>
+            <span class="post-date">2026-08-29</span>
+          </div>
           <div class="post-list-item" data-tags="music,navidrome,listening-log" data-year="2026">
             <a href="/posts/2026-08-28-daily-listening.html">daily listening habits: August 28, 2026</a>
             <span class="post-date">2026-08-28</span>
+          </div>
+          <div class="post-list-item" data-tags="linux,nixos,thinkpad,hardware" data-year="2026">
+            <a href="/posts/the-brief-life-of-a-dialed-in-thinkpad.html">The Brief Life of a Dialed-In ThinkPad</a>
+            <span class="post-date">2026-08-25</span>
           </div>
           <div class="post-list-item" data-tags="web,performance,self-hosting" data-year="2026">
             <a href="/posts/building-lightweight.html">building websites for old hardware</a>
@@ -64,12 +76,12 @@
         <pre><code>$ binbot --telemetry
 ============================================================
 HOST:         pipi
-OS:           Debian GNU/Linux 13 (trixie) [aarch64]
-KERNEL:       Linux 6.18.34+rpt-rpi-v8 aarch64
-UPTIME:       2 days,  1:24 (24/7 low-power outpost)
-LOAD:         0.00, 0.00, 0.00
-RAM:          162 MB / 905 MB (Nginx RAM cache active)
-POWER:        ~1.2W low-power footprint (green hosted)
+OS:           Alpine Linux v3.20 [aarch64]
+KERNEL:       Linux 6.6.49-0-rpi aarch64
+UPTIME:       8:45 (24/7 low-power outpost)
+LOAD:         0.06, 0.01, 0.00
+RAM:          83 MB / 908 MB (ultra-lightweight footprint)
+POWER:        ~1.0W low-power footprint (green hosted)
 ============================================================</code></pre>
       </section>
       </article>

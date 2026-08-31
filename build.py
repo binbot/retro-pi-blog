@@ -305,27 +305,27 @@ def render_html_page(title, subpath, status_text, body_html, description="", ext
 def fetch_pi_telemetry():
     """Fetch live hardware telemetry from Raspberry Pi (pipi)."""
     cmd = "uptime; free -m; uname -mrs; cat /etc/os-release"
-    hosts = ["binbot@pipi.local", "binbot@192.168.86.43"]
+    hosts = ["binbot@pipi", "binbot@192.168.86.42", "binbot@100.99.56.3"]
     
     for h in hosts:
         try:
             res = subprocess.run(
-                ["ssh", "-o", "ConnectTimeout=3", "-o", "BatchMode=yes", h, cmd],
+                ["ssh", "-o", "ConnectTimeout=2", "-o", "BatchMode=yes", h, cmd],
                 capture_output=True, text=True, check=True
             )
             lines = [l.strip() for l in res.stdout.strip().splitlines() if l.strip()]
 
-            os_name = "Debian GNU/Linux 13 (trixie) [aarch64]"
+            os_name = "Alpine Linux v3.20 [aarch64]"
             for l in lines:
                 if l.startswith("PRETTY_NAME="):
                     os_name = l.replace("PRETTY_NAME=", "").strip('"').strip("'") + " [aarch64]"
 
-            kernel_str = "Linux 6.18.34+rpt-rpi-v8"
+            kernel_str = "Linux 6.6.49-0-rpi aarch64"
             for l in lines:
-                if l.startswith("Linux ") and ("rpt" in l or "v8" in l or "arm" in l or "aarch64" in l):
+                if l.startswith("Linux ") and ("rpi" in l or "alpine" in l or "aarch64" in l or "arm" in l):
                     kernel_str = l
 
-            uptime_str = "2 days, nominal"
+            uptime_str = "nominal"
             load_str = "0.00, 0.00, 0.00"
             for l in lines:
                 if "load average:" in l:
@@ -335,11 +335,12 @@ def fetch_pi_telemetry():
                     if m_up:
                         uptime_str = m_up.group(1).strip()
 
-            ram_str = "162 MB / 905 MB"
+            ram_str = "83 MB / 908 MB"
             for l in lines:
                 if l.startswith("Mem:"):
                     p = l.split()
-                    ram_str = f"{p[2]} MB / {p[1]} MB"
+                    if len(p) >= 3:
+                        ram_str = f"{p[2]} MB / {p[1]} MB"
 
             return f"""============================================================
 HOST:         pipi
@@ -347,8 +348,8 @@ OS:           {os_name}
 KERNEL:       {kernel_str}
 UPTIME:       {uptime_str} (24/7 low-power outpost)
 LOAD:         {load_str}
-RAM:          {ram_str} (Nginx RAM cache active)
-POWER:        ~1.2W low-power footprint (green hosted)
+RAM:          {ram_str} (ultra-lightweight footprint)
+POWER:        ~1.0W low-power footprint (green hosted)
 ============================================================"""
         except Exception:
             continue
@@ -356,12 +357,12 @@ POWER:        ~1.2W low-power footprint (green hosted)
     # Fallback if pi unreachable during build
     return f"""============================================================
 HOST:         pipi
-OS:           Debian GNU/Linux 13 (trixie) [aarch64]
-KERNEL:       Linux 6.18.34+rpt-rpi-v8
-UPTIME:       2+ days (24/7 low-power outpost)
-LOAD:         0.00, 0.00, 0.00
-RAM:          162 MB / 905 MB (Nginx RAM cache active)
-POWER:        ~1.2W low-power footprint (green hosted)
+OS:           Alpine Linux v3.20 [aarch64]
+KERNEL:       Linux 6.6.49-0-rpi aarch64
+UPTIME:       nominal (24/7 low-power outpost)
+LOAD:         0.02, 0.01, 0.00
+RAM:          83 MB / 908 MB (ultra-lightweight footprint)
+POWER:        ~1.0W low-power footprint (green hosted)
 ============================================================"""
 
 
