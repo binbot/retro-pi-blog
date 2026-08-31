@@ -16,6 +16,28 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 CONTENT_DIR = os.path.join(ROOT_DIR, "content")
 MEDIA_DIR = os.path.join(ROOT_DIR, "media")
 
+def strip_exif_metadata(media_dir=MEDIA_DIR):
+    """Automatically strips all EXIF, GPS, camera, and device metadata from media files."""
+    valid_exts = (".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff")
+    stripped_count = 0
+    if not os.path.exists(media_dir):
+        return 0
+
+    for fname in os.listdir(media_dir):
+        if fname.lower().endswith(valid_exts):
+            fpath = os.path.join(media_dir, fname)
+            try:
+                subprocess.run(
+                    ["magick", "mogrify", "-strip", fpath],
+                    check=True,
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL
+                )
+                stripped_count += 1
+            except Exception:
+                pass
+    return stripped_count
+
 def parse_frontmatter(content):
     """Extract YAML-like frontmatter between leading --- delimiters."""
     meta = {}
@@ -675,6 +697,9 @@ def build_cv():
 
 def main():
     print("=== Building retro-pi-blog ===")
+    stripped = strip_exif_metadata()
+    if stripped > 0:
+        print(f"-> Sanitized EXIF & GPS metadata from {stripped} image(s) in media/")
     posts = build_posts()
     print(f"-> Generated {len(posts)} blog posts")
     build_blog_index(posts)
