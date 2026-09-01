@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Brief Life of a Dialed-In ThinkPad</title>
+  <meta name="description" content="A lesson about attachments">
+  
+  <link rel="stylesheet" href="/style.css?v=2.3">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <a href="/" class="pd-object" style="font-size: 1rem; padding: 4px 10px; text-decoration: none;">
+            binbot
+            <div class="pd-clickable-corner" style="width: 6px; height: 6px;"></div>
+          </a>
+          <span style="font-size: 1.1rem; font-weight: bold; opacity: 0.85;">~ /blog/post</span>
+        </div>
+        <span class="text-muted" style="font-size: 0.85rem;">published: 2026-08-25</span>
+      </div>
+      <h1 style="margin-top: 1.5rem;">The Brief Life of a Dialed-In ThinkPad</h1>
+      <div style="margin-top: 0.4rem; display: flex; flex-wrap: wrap; gap: 4px; align-items: center;"><span class="text-muted" style="font-size: 0.85rem; margin-right: 4px;">tags:</span><a href="/blog/#linux" class="tag-link">#linux</a> <a href="/blog/#nixos" class="tag-link">#nixos</a> <a href="/blog/#thinkpad" class="tag-link">#thinkpad</a> <a href="/blog/#hardware" class="tag-link">#hardware</a></div>
+    </header>
+
+    <main>
+      <article>
+        <h2>01. introduction</h2>
+<p>A buddy handed down an X1 Carbon Gen 6 his office wasn't using anymore. Windows was sluggish on it, but it was a great candidate for a lightweight Linux setup.</p>
+<p>I started with Ubuntu, but it felt heavy and kept getting in the way. With a little help from opencode and antigravity, I gave NixOS a shot instead. Once things clicked, it was great. I had a really minimal, fast setup running—Niri, Waybar, SwayOSD, and the fingerprint reader working without fuss. Declarative configs are addictive, and watching rebuilds finish cleanly was super satisfying.</p>
+<p><div style="text-align: center; margin: 1.5rem 0;"><img src="/media/nix_os.png" alt="Desktop rice on NixOS" style="max-width: 100%; height: auto; border: 1px solid var(--border-color); padding: 4px; background: var(--card-bg);" /><p class="text-muted" style="font-size: 0.8rem; margin-top: 0.5rem;">[fig: Desktop rice on NixOS]</p></div></p>
+<p>Then it died mid-use.</p>
+<p>The screen cut out while plugged in. No charging indicator, no fan, no response to hardware resets. Might be the motherboard, might be power delivery, but with no spare budget to throw at it right now, it sits configured on my desk doing nothing.</p>
+<p>Felt pretty in tune with this scene the next day:</p>
+<p><div style="text-align: center; margin: 1.5rem 0;"><img src="/media/tree_car.jpg" alt="Car with a tree on it" style="max-width: 100%; height: auto; border: 1px solid var(--border-color); padding: 4px; background: var(--card-bg);" /><p class="text-muted" style="font-size: 0.8rem; margin-top: 0.5rem;">[fig: Car with a tree on it]</p></div></p>
+<p>The upside to declarative setups is that the machine is dead, but the config lives on in git. Whenever I get replacement hardware, it's just one rebuild command away.</p>
+      </article>
+      <div style="margin-top: 2rem;"><a href="/blog/">&lt;-- back to blog</a></div>
+    </main>
+
+    <footer>
+      <p>served with care from a raspberry pi | <a href="https://github.com/binbot" target="_blank">github</a> | <a href="https://codeberg.org/binbot" target="_blank">codeberg</a> | <a href="mailto:binbot@binbot.dev">email</a></p>
+      <div class="theme-selector" style="text-align: center; margin-top: 1rem; margin-bottom: 0;">
+        Theme:
+        <button class="theme-btn" data-set-theme="paper">Warm Paper</button>
+        <button class="theme-btn" data-set-theme="dark">Dark Mode</button>
+        <button class="theme-btn" data-set-theme="amber">Amber Terminal</button>
+        <button class="theme-btn" data-set-theme="green">Green Terminal</button>
+      </div>
+      <p class="text-muted" style="font-size: 0.75rem; margin-top: 1rem;">page weight: ~5.8KB | green hosting certified (700mW idle power)</p>
+    </footer>
+  </div>
+
+  <script src="/script.js?v=2.3"></script>
+</body>
+</html>

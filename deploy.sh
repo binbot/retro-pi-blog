@@ -4,7 +4,7 @@
 set -e
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PI_HOST="pipi.local"
+PI_HOST="pipi"
 PI_USER="binbot"
 WEB_ROOT="/var/www/retro-blog"
 
