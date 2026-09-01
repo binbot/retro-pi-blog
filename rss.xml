@@ -6,11 +6,39 @@
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
     <item>
+      <title>Borked Kernels and Moving to Alpine Linux</title>
+      <link>https://binbot.dev/posts/borked-kernels-and-moving-to-alpine-linux.html</link>
+      <guid>https://binbot.dev/posts/borked-kernels-and-moving-to-alpine-linux.html</guid>
+      <pubDate>2026-08-31</pubDate>
+      <description>Lessons on attachments, part two</description>
+    </item>
+    <item>
+      <title>daily listening habits: August 31, 2026</title>
+      <link>https://binbot.dev/posts/2026-08-31-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-08-31-daily-listening.html</guid>
+      <pubDate>2026-08-31</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>daily listening habits: August 29, 2026</title>
+      <link>https://binbot.dev/posts/2026-08-29-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-08-29-daily-listening.html</guid>
+      <pubDate>2026-08-29</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
       <title>daily listening habits: August 28, 2026</title>
       <link>https://binbot.dev/posts/2026-08-28-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-08-28-daily-listening.html</guid>
       <pubDate>2026-08-28</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>The Brief Life of a Dialed-In ThinkPad</title>
+      <link>https://binbot.dev/posts/the-brief-life-of-a-dialed-in-thinkpad.html</link>
+      <guid>https://binbot.dev/posts/the-brief-life-of-a-dialed-in-thinkpad.html</guid>
+      <pubDate>2026-08-25</pubDate>
+      <description>A lesson about attachments</description>
     </item>
     <item>
       <title>building websites for old hardware</title>

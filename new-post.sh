@@ -1,5 +1,5 @@
 #!/bin/bash
-# new-post.sh - Create a new blog post in Markdown and open in $EDITOR
+# new-post.sh - Create a new blog post in Markdown and open in your editor
 
 set -e
 
@@ -33,7 +33,7 @@ else
 title: ${TITLE}
 date: ${DATE}
 description: Brief description of ${TITLE}
-tags: blog, notes
+tags: blog, linux, hardware
 slug: ${SLUG}
 ---
 
@@ -45,13 +45,16 @@ POST_EOF
   echo "Created new post: ${FILENAME}"
 fi
 
-EDITOR_CMD="${EDITOR:-nvim}"
-if ! command -v "${EDITOR_CMD}" &> /dev/null; then
-  EDITOR_CMD="vim"
-  if ! command -v "${EDITOR_CMD}" &> /dev/null; then
-    EDITOR_CMD="nano"
-  fi
+# Detect editor
+if [ -n "${EDITOR}" ]; then
+  ${EDITOR} "${FILENAME}"
+elif command -v nvim &> /dev/null; then
+  nvim "${FILENAME}"
+elif command -v vim &> /dev/null; then
+  vim "${FILENAME}"
+elif command -v vi &> /dev/null; then
+  vi "${FILENAME}"
+else
+  echo "Post created at: ${FILENAME}"
+  echo "You can edit it with: nvim \"${FILENAME}\""
 fi
-
-echo "Opening ${FILENAME} with ${EDITOR_CMD}..."
-${EDITOR_CMD} "${FILENAME}"
