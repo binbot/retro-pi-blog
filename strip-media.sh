@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # strip-media.sh - Strip all EXIF, GPS, camera, and device metadata from media files
 
 set -e

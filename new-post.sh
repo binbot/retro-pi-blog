@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # new-post.sh - Create a new blog post in Markdown and open in your editor
 
 set -e
