@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # deploy.sh - Build markdown files and sync to Raspberry Pi
 
 set -e
