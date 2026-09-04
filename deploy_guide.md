@@ -49,7 +49,7 @@ Nginx is extremely lightweight, typically using only 10–20MB of RAM, making it
    rsync -avz /path/to/retro-pi-blog/ username@raspberrypi.local:/var/www/retro-blog/
    ```
 
-3. Place your actual audio files (e.g. `forest-rain.mp3`) in the `/var/www/retro-blog/media/` folder on the Pi.
+3. Place your actual audio files in the `/var/www/retro-blog/media/` folder on the Pi (or add them via `./new-audio.sh`).
 
 ---
 

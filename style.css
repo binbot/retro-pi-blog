@@ -270,8 +270,8 @@ code {
   border-bottom: 1px solid var(--border-color);
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
 .playlist-item:last-child {
@@ -289,6 +289,28 @@ code {
 
 .playlist-item.active a {
   color: var(--bg-color);
+}
+
+.playlist-item.active .text-muted {
+  color: var(--bg-color);
+  opacity: 0.85;
+}
+
+.playlist-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.track-desc {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.track-date {
+  font-weight: bold;
 }
 
 /* CV Styles */

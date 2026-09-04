@@ -18,7 +18,9 @@ rsync -avz --delete \
   --exclude="content" \
   --exclude="build.py" \
   --exclude="new-post.sh" \
+  --exclude="new-audio.sh" \
   --exclude="edit-post.sh" \
+  --exclude="log-music.sh" \
   --exclude="scripts" \
   --exclude="deploy.sh" \
   --exclude="strip-media.sh" \
