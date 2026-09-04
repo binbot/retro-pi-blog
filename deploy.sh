@@ -18,11 +18,14 @@ rsync -avz --delete \
   --exclude="content" \
   --exclude="build.py" \
   --exclude="new-post.sh" \
+  --exclude="edit-post.sh" \
   --exclude="scripts" \
   --exclude="deploy.sh" \
   --exclude="strip-media.sh" \
   --exclude="*.conf" \
   --exclude="deploy_guide.md" \
+  --exclude="BLOG_GUIDE.md" \
+  --exclude="README.md" \
   "${DIR}/" "${PI_USER}@${PI_HOST}:${WEB_ROOT}/"
 
 echo "=== 3. Syncing with Git Remotes ==="
