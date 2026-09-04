@@ -20,7 +20,7 @@ Starting a small log here whenever a new batch comes out of the oven.
 
 ### The Bake & Result: 8/10
 
-I could tell during the second rise in the pans that this batch was behaving itself nicely. The rise was uniform, domes looked okay, and didn't collapse or turn sluggish.
+I could tell during the second rise in the pans that this batch was behaving nicely. The rise was uniform, domes looked okay, and didn't collapse or turn sluggish.
 
 ![Second rise in loaf pans](/media/second_rise.jpg)
 
