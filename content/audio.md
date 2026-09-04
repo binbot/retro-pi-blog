@@ -21,4 +21,18 @@ this custom music player uses standard html5 audio APIs styled with simple, retr
   duration: 02:11
   date: 2023-10-28
   description: Taking a break at Cave Mountain Lake
+- title: Quiet stream
+  src: /media/quiet_stream.mp3
+  duration: 02:10
+  date: 2023-10-28
+  description: Sitting by the stream, Cave Mountain Lake
+- title: Rolling
+  src: /media/rolling.mp3
+  duration: 01:30
+  date: 2023-10-28
+- title: Temple Bells
+  src: /media/thailand_wind_temple.mp3
+  duration: 01:07
+  date: 2024-05-24
+  description: Thailand: Temple Bellls
 -->
