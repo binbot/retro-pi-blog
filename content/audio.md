@@ -16,4 +16,9 @@ this custom music player uses standard html5 audio APIs styled with simple, retr
   duration: 01:28
   date: 2023-10-28
   description: Campground banter
+- title: Campground Snoozes
+  src: /media/nb_snoozing_forest.mp3
+  duration: 02:11
+  date: 2023-10-28
+  description: Taking a break at Cave Mountain Lake
 -->
