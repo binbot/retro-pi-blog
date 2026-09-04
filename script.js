@@ -131,6 +131,7 @@ function initAudioPlayer() {
   }
 
   function stopTrack() {
+    if (tracks.length === 0) return;
     audio.pause();
     audio.currentTime = 0;
     isPlaying = false;
@@ -141,12 +142,14 @@ function initAudioPlayer() {
   }
 
   function nextTrack() {
+    if (tracks.length === 0) return;
     let nextIndex = currentTrackIndex + 1;
     if (nextIndex >= tracks.length) nextIndex = 0; // Loop to start
     playTrack(nextIndex);
   }
 
   function prevTrack() {
+    if (tracks.length === 0) return;
     let prevIndex = currentTrackIndex - 1;
     if (prevIndex < 0) prevIndex = tracks.length - 1; // Loop to end
     playTrack(prevIndex);

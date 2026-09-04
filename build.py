@@ -563,12 +563,7 @@ def build_audio():
         content = f.read()
     meta, body = parse_frontmatter(content)
 
-    tracks = [
-        {"title": "forest rain field recording", "src": "/media/forest-rain.mp3", "duration": "02:14"},
-        {"title": "synth sunset draft (op-1 pocket sketch)", "src": "/media/synth-sketch-05.mp3", "duration": "01:45"},
-        {"title": "acoustic riff idea (recorded with phone mic)", "src": "/media/guitar-improvisation.mp3", "duration": "00:58"},
-    ]
-
+    tracks = []
     tracks_match = re.search(r'<!--\s*tracks:(.*?)-->', body, re.DOTALL)
     if tracks_match:
         custom_tracks = []
@@ -576,36 +571,70 @@ def build_audio():
         for l in tracks_match.group(1).splitlines():
             l = l.strip()
             if l.startswith("- title:"):
-                if cur_t: custom_tracks.append(cur_t)
+                if cur_t:
+                    custom_tracks.append(cur_t)
                 cur_t = {"title": l[8:].strip()}
             elif l.startswith("src:"):
                 cur_t["src"] = l[4:].strip()
             elif l.startswith("duration:"):
                 cur_t["duration"] = l[9:].strip()
-        if cur_t: custom_tracks.append(cur_t)
-        if custom_tracks:
-            tracks = custom_tracks
+            elif l.startswith("date:"):
+                cur_t["date"] = l[5:].strip()
+            elif l.startswith("description:"):
+                cur_t["description"] = l[12:].strip()
+            elif l.startswith("desc:"):
+                cur_t["description"] = l[5:].strip()
+        if cur_t:
+            custom_tracks.append(cur_t)
+        tracks = custom_tracks
         body = re.sub(r'<!--\s*tracks:.*?-->', '', body, flags=re.DOTALL)
 
-    playlist_items = []
-    for idx, t in enumerate(tracks, start=1):
-        num_str = f"[{idx:02d}]"
-        playlist_items.append(f"""          <li class="playlist-item" data-src="{t['src']}">
-            <span>
-              <span class="track-num">{num_str}</span>
-              <span class="track-title">{t['title']}</span>
-            </span>
-            <span class="text-muted">
-              ({t.get('duration', '--:--')}) &middot; <a href="{t['src']}" download>[download]</a>
-            </span>
+    # Extract blurb from Section 01
+    intro_match = re.search(r'## 01[^\n]*\n+(.*?)(?=\n+## 02|\Z)', body, re.DOTALL)
+    if intro_match and intro_match.group(1).strip():
+        intro_html = markdown_to_html(intro_match.group(1).strip())
+    else:
+        intro_html = "<p>this custom music player uses standard html5 audio APIs styled with simple, retro css borders. it requires no heavy third-party framework, keeping load time and execution memory near-zero for the server.</p>"
+
+    # Build tracklist HTML
+    if tracks:
+        playlist_items = []
+        for idx, t in enumerate(tracks, start=1):
+            num_str = f"[{idx:02d}]"
+            desc_html = ""
+            desc_parts = []
+            if t.get("date"):
+                desc_parts.append(f'<span class="track-date">{html.escape(t["date"])}</span>')
+            if t.get("description"):
+                desc_parts.append(f'<span class="track-desc-text">{html.escape(t["description"])}</span>')
+            if desc_parts:
+                desc_html = f'\n            <div class="track-desc text-muted">{" &mdash; ".join(desc_parts)}</div>'
+
+            playlist_items.append(f"""          <li class="playlist-item" data-src="{t.get('src', '')}">
+            <div class="playlist-main">
+              <span>
+                <span class="track-num">{num_str}</span>
+                <span class="track-title">{html.escape(t.get('title', 'Untitled Track'))}</span>
+              </span>
+              <span class="text-muted">
+                ({t.get('duration', '--:--')}) &middot; <a href="{t.get('src', '')}" download>[download]</a>
+              </span>
+            </div>{desc_html}
           </li>""")
+        tracklist_html = f"""
+        <p class="text-muted">click on a track below to load and play it in the console above, or click "[download]" to grab the file.</p>
+        
+        <ul class="playlist">
+{"\n".join(playlist_items)}
+        </ul>"""
+    else:
+        tracklist_html = """
+        <p class="text-muted" style="margin-top: 1rem;">[no audio tracks loaded in archive yet. check back soon.]</p>"""
 
     player_html = f"""
       <section>
         <h2>01. custom retro player</h2>
-        <p>
-          this custom music player uses standard html5 audio APIs styled with simple, retro css borders. it requires no heavy third-party framework, keeping load time and execution memory near-zero for the server.
-        </p>
+        {intro_html}
 
         <!-- Hidden native audio element -->
         <audio id="main-audio" style="display: none;"></audio>
@@ -631,16 +660,11 @@ def build_audio():
       </section>
 
       <section>
-        <h2>02. tracklist</h2>
-        <p class="text-muted">click on a track below to load and play it in the console above, or click "[download]" to grab the file.</p>
-        
-        <ul class="playlist">
-{"\n".join(playlist_items)}
-        </ul>
+        <h2>02. tracklist</h2>{tracklist_html}
       </section>
 """
-    clean_body = re.sub(r'## 01.*?(?=## 03|\Z)', '', body, flags=re.DOTALL)
-    extra_body_html = markdown_to_html(clean_body)
+    clean_body = re.sub(r'## 01.*?(?=\n## (?!01|02)|\Z)', '', body, flags=re.DOTALL).strip()
+    extra_body_html = markdown_to_html(clean_body) if clean_body else ""
 
     out_dir = os.path.join(ROOT_DIR, "audio")
     os.makedirs(out_dir, exist_ok=True)
