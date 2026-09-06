@@ -6,6 +6,13 @@
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
     <item>
+      <title>daily listening habits: September 05, 2026</title>
+      <link>https://binbot.dev/posts/2026-09-05-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-09-05-daily-listening.html</guid>
+      <pubDate>2026-09-05</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
       <title>Resurrecting the X1 Carbon: The 10-Day Flea Power Cold Boot</title>
       <link>https://binbot.dev/posts/resurrecting-the-x1-carbon-the-10-day-flea-power-cold-boot.html</link>
       <guid>https://binbot.dev/posts/resurrecting-the-x1-carbon-the-10-day-flea-power-cold-boot.html</guid>
