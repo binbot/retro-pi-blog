@@ -6,6 +6,13 @@
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
     <item>
+      <title>daily listening habits: September 09, 2026</title>
+      <link>https://binbot.dev/posts/2026-09-09-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-09-09-daily-listening.html</guid>
+      <pubDate>2026-09-09</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
       <title>daily listening habits: September 07, 2026</title>
       <link>https://binbot.dev/posts/2026-09-07-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-07-daily-listening.html</guid>
@@ -102,13 +109,6 @@
       <guid>https://binbot.dev/posts/the-brief-life-of-a-dialed-in-thinkpad.html</guid>
       <pubDate>2026-08-25</pubDate>
       <description>A lesson about attachments</description>
-    </item>
-    <item>
-      <title>building websites for old hardware</title>
-      <link>https://binbot.dev/posts/building-lightweight.html</link>
-      <guid>https://binbot.dev/posts/building-lightweight.html</guid>
-      <pubDate>2026-06-07</pubDate>
-      <description>Why writing raw, lightweight HTML is a powerful design choice for vintage hardware.</description>
     </item>
   </channel>
 </rss>
