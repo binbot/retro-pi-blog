@@ -6,6 +6,13 @@
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
     <item>
+      <title>daily listening habits: September 13, 2026</title>
+      <link>https://binbot.dev/posts/2026-09-13-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-09-13-daily-listening.html</guid>
+      <pubDate>2026-09-13</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
       <title>daily listening habits: September 11, 2026</title>
       <link>https://binbot.dev/posts/2026-09-11-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-11-daily-listening.html</guid>
@@ -101,13 +108,6 @@
       <link>https://binbot.dev/posts/2026-08-31-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-08-31-daily-listening.html</guid>
       <pubDate>2026-08-31</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: August 29, 2026</title>
-      <link>https://binbot.dev/posts/2026-08-29-daily-listening.html</link>
-      <guid>https://binbot.dev/posts/2026-08-29-daily-listening.html</guid>
-      <pubDate>2026-08-29</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
