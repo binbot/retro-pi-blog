@@ -2,7 +2,7 @@
 title: Baking Log: Batch #1 (Honey White Sandwich Bread)
 date: 2026-09-02
 description: Another successful batch, this time substituting honey for sugar
-tags: blog, bread-log, homemade, honey
+tags: blog, bread-log, diy, honey
 slug: baking-log-batch-1-honey-white-sandwich-bread
 ---
 
