@@ -13,6 +13,13 @@
       <description>Brief description of Baking Log: Batch #2 (Honey White Sandwich Bread)</description>
     </item>
     <item>
+      <title>daily listening habits: September 14, 2026</title>
+      <link>https://binbot.dev/posts/2026-09-14-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-09-14-daily-listening.html</guid>
+      <pubDate>2026-09-14</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
       <title>daily listening habits: September 13, 2026</title>
       <link>https://binbot.dev/posts/2026-09-13-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-13-daily-listening.html</guid>
@@ -102,13 +109,6 @@
       <guid>https://binbot.dev/posts/2026-09-01-daily-listening.html</guid>
       <pubDate>2026-09-01</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>Borked Kernels and Moving to Alpine Linux</title>
-      <link>https://binbot.dev/posts/borked-kernels-and-moving-to-alpine-linux.html</link>
-      <guid>https://binbot.dev/posts/borked-kernels-and-moving-to-alpine-linux.html</guid>
-      <pubDate>2026-08-31</pubDate>
-      <description>Lessons on attachments, part two</description>
     </item>
   </channel>
 </rss>

@@ -12,7 +12,7 @@ It’s been two weeks, time for another bread session!
 
 In the [last post](https://binbot.dev/blog/baking-log-batch-1/), I mentioned experimenting with sugar versus honey next time around. But with the mixed flour already introducing a new variable, I stuck with honey again.
 
-![Measured cup of honey](./media/quarter_cup_honey.jpg)
+![Measured cup of honey](/media/quarter_cup_honey.jpg)
 ### The Specs
 - **Recipe:** [Homemade Bread Recipe - Tastes Better from Scratch](https://tastesbetterfromscratch.com/bread-recipe/)
 - **Flour:** 50% [King Arthur Unbleached Flour](https://shop.kingarthurbaking.com/) / 50% [Hudson Cream Flour](https://www.hudsoncream.com/) (6 cups total)
