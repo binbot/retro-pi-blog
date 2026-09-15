@@ -10,7 +10,7 @@ slug: baking-log-batch-2-honey-white-sandwich-bread
 
 It’s been two weeks, time for another bread session!
 
-In the [last post](https://binbot.dev/blog/baking-log-batch-1/), I mentioned experimenting with sugar versus honey next time around. But with the mixed flour already introducing a new variable, I stuck with honey again.
+In the [last post](https://binbot.dev/posts/baking-log-batch-1-honey-white-sandwich-bread.html), I mentioned experimenting with sugar versus honey next time around. But with the mixed flour already introducing a new variable, I stuck with honey again.
 
 ![Measured cup of honey](/media/quarter_cup_honey.jpg)
 ### The Specs
