@@ -6,6 +6,13 @@
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
     <item>
+      <title>Installing Fedora Asahi Linux Remix on an M1 MacBook Pro 14</title>
+      <link>https://binbot.dev/posts/installing-fedora-asahi-linux-remix-on-an-m1-macbook-pro-14.html</link>
+      <guid>https://binbot.dev/posts/installing-fedora-asahi-linux-remix-on-an-m1-macbook-pro-14.html</guid>
+      <pubDate>2026-09-15</pubDate>
+      <description>Brief description of Installing Fedora Asahi Linux Remix on an M1 MacBook Pro 14</description>
+    </item>
+    <item>
       <title>daily listening habits: September 14, 2026</title>
       <link>https://binbot.dev/posts/2026-09-14-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-14-daily-listening.html</guid>
@@ -102,13 +109,6 @@
       <guid>https://binbot.dev/posts/baking-log-batch-1-honey-white-sandwich-bread.html</guid>
       <pubDate>2026-09-02</pubDate>
       <description>Another successful batch, this time substituting honey for sugar</description>
-    </item>
-    <item>
-      <title>daily listening habits: September 01, 2026</title>
-      <link>https://binbot.dev/posts/2026-09-01-daily-listening.html</link>
-      <guid>https://binbot.dev/posts/2026-09-01-daily-listening.html</guid>
-      <pubDate>2026-09-01</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
 </rss>
