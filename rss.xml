@@ -13,6 +13,13 @@
       <description>Brief description of Installing Fedora Asahi Linux Remix on an M1 MacBook Pro 14</description>
     </item>
     <item>
+      <title>daily listening habits: September 15, 2026</title>
+      <link>https://binbot.dev/posts/2026-09-15-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-09-15-daily-listening.html</guid>
+      <pubDate>2026-09-15</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
       <title>daily listening habits: September 14, 2026</title>
       <link>https://binbot.dev/posts/2026-09-14-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-14-daily-listening.html</guid>
@@ -102,13 +109,6 @@
       <guid>https://binbot.dev/posts/2026-09-02-daily-listening.html</guid>
       <pubDate>2026-09-02</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>Baking Log: Batch #1 (Honey White Sandwich Bread)</title>
-      <link>https://binbot.dev/posts/baking-log-batch-1-honey-white-sandwich-bread.html</link>
-      <guid>https://binbot.dev/posts/baking-log-batch-1-honey-white-sandwich-bread.html</guid>
-      <pubDate>2026-09-02</pubDate>
-      <description>Another successful batch, this time substituting honey for sugar</description>
     </item>
   </channel>
 </rss>
