@@ -6,6 +6,13 @@
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
     <item>
+      <title>daily listening habits: September 16, 2026</title>
+      <link>https://binbot.dev/posts/2026-09-16-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-09-16-daily-listening.html</guid>
+      <pubDate>2026-09-16</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
       <title>Installing Fedora Asahi Linux Remix on an M1 MacBook Pro 14</title>
       <link>https://binbot.dev/posts/installing-fedora-asahi-linux-remix-on-an-m1-macbook-pro-14.html</link>
       <guid>https://binbot.dev/posts/installing-fedora-asahi-linux-remix-on-an-m1-macbook-pro-14.html</guid>
@@ -20,18 +27,18 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>daily listening habits: September 14, 2026</title>
-      <link>https://binbot.dev/posts/2026-09-14-daily-listening.html</link>
-      <guid>https://binbot.dev/posts/2026-09-14-daily-listening.html</guid>
-      <pubDate>2026-09-14</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
       <title>Baking Log: Batch #2 (Honey White Sandwich Bread)</title>
       <link>https://binbot.dev/posts/baking-log-batch-2-honey-white-sandwich-bread.html</link>
       <guid>https://binbot.dev/posts/baking-log-batch-2-honey-white-sandwich-bread.html</guid>
       <pubDate>2026-09-14</pubDate>
       <description>Brief description of Baking Log: Batch #2 (Honey White Sandwich Bread)</description>
+    </item>
+    <item>
+      <title>daily listening habits: September 14, 2026</title>
+      <link>https://binbot.dev/posts/2026-09-14-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-09-14-daily-listening.html</guid>
+      <pubDate>2026-09-14</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
       <title>daily listening habits: September 13, 2026</title>
@@ -83,13 +90,6 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>daily listening habits: September 04, 2026</title>
-      <link>https://binbot.dev/posts/2026-09-04-daily-listening.html</link>
-      <guid>https://binbot.dev/posts/2026-09-04-daily-listening.html</guid>
-      <pubDate>2026-09-04</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
       <title>Resurrecting the X1 Carbon: The 10-Day Flea Power Cold Boot</title>
       <link>https://binbot.dev/posts/resurrecting-the-x1-carbon-the-10-day-flea-power-cold-boot.html</link>
       <guid>https://binbot.dev/posts/resurrecting-the-x1-carbon-the-10-day-flea-power-cold-boot.html</guid>
@@ -97,17 +97,17 @@
       <description>Brief description of Resurrecting the X1 Carbon: The 10-Day Flea Power Cold Boot</description>
     </item>
     <item>
+      <title>daily listening habits: September 04, 2026</title>
+      <link>https://binbot.dev/posts/2026-09-04-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-09-04-daily-listening.html</guid>
+      <pubDate>2026-09-04</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
       <title>daily listening habits: September 03, 2026</title>
       <link>https://binbot.dev/posts/2026-09-03-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-03-daily-listening.html</guid>
       <pubDate>2026-09-03</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: September 02, 2026</title>
-      <link>https://binbot.dev/posts/2026-09-02-daily-listening.html</link>
-      <guid>https://binbot.dev/posts/2026-09-02-daily-listening.html</guid>
-      <pubDate>2026-09-02</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
