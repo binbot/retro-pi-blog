@@ -24,5 +24,5 @@ theme presets (Warm Paper, Dark Mode, Amber, and Green) allow you to view the se
 ## 03. external interfaces
 
 - **version:** v2.1-lts
-- **hosting:** raspberry pi OS lite
+- **hosting:** alpine linux v3.20
 - **source:** vanilla HTML/CSS & zero-dependency JS
