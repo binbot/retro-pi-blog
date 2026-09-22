@@ -6,6 +6,13 @@
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
     <item>
+      <title>daily listening habits: September 21, 2026</title>
+      <link>https://binbot.dev/posts/2026-09-21-daily-listening.html</link>
+      <guid>https://binbot.dev/posts/2026-09-21-daily-listening.html</guid>
+      <pubDate>2026-09-21</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
       <title>daily listening habits: September 20, 2026</title>
       <link>https://binbot.dev/posts/2026-09-20-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-20-daily-listening.html</guid>
@@ -41,18 +48,18 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>Installing Fedora Asahi Linux Remix on an M1 MacBook Pro 14</title>
-      <link>https://binbot.dev/posts/installing-fedora-asahi-linux-remix-on-an-m1-macbook-pro-14.html</link>
-      <guid>https://binbot.dev/posts/installing-fedora-asahi-linux-remix-on-an-m1-macbook-pro-14.html</guid>
-      <pubDate>2026-09-15</pubDate>
-      <description>Brief description of Installing Fedora Asahi Linux Remix on an M1 MacBook Pro 14</description>
-    </item>
-    <item>
       <title>daily listening habits: September 15, 2026</title>
       <link>https://binbot.dev/posts/2026-09-15-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-15-daily-listening.html</guid>
       <pubDate>2026-09-15</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>Installing Fedora Asahi Linux Remix on an M1 MacBook Pro 14</title>
+      <link>https://binbot.dev/posts/installing-fedora-asahi-linux-remix-on-an-m1-macbook-pro-14.html</link>
+      <guid>https://binbot.dev/posts/installing-fedora-asahi-linux-remix-on-an-m1-macbook-pro-14.html</guid>
+      <pubDate>2026-09-15</pubDate>
+      <description>Brief description of Installing Fedora Asahi Linux Remix on an M1 MacBook Pro 14</description>
     </item>
     <item>
       <title>Baking Log: Batch #2 (Honey White Sandwich Bread)</title>
@@ -101,13 +108,6 @@
       <link>https://binbot.dev/posts/2026-09-07-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-07-daily-listening.html</guid>
       <pubDate>2026-09-07</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: September 06, 2026</title>
-      <link>https://binbot.dev/posts/2026-09-06-daily-listening.html</link>
-      <guid>https://binbot.dev/posts/2026-09-06-daily-listening.html</guid>
-      <pubDate>2026-09-06</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
