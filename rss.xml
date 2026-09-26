@@ -6,6 +6,13 @@
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
     <item>
+      <title>Digital Minimalism and the Second Arrow</title>
+      <link>https://binbot.dev/posts/digital-minimalism-and-the-second-arrow.html</link>
+      <guid>https://binbot.dev/posts/digital-minimalism-and-the-second-arrow.html</guid>
+      <pubDate>2026-09-26</pubDate>
+      <description>Brief description of Digital Minimalism and the Second Arrow</description>
+    </item>
+    <item>
       <title>What a Qute Browser!</title>
       <link>https://binbot.dev/posts/what-a-qute-browser.html</link>
       <guid>https://binbot.dev/posts/what-a-qute-browser.html</guid>
@@ -83,13 +90,6 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>Baking Log: Batch #2 (Honey White Sandwich Bread)</title>
-      <link>https://binbot.dev/posts/baking-log-batch-2-honey-white-sandwich-bread.html</link>
-      <guid>https://binbot.dev/posts/baking-log-batch-2-honey-white-sandwich-bread.html</guid>
-      <pubDate>2026-09-14</pubDate>
-      <description>Brief description of Baking Log: Batch #2 (Honey White Sandwich Bread)</description>
-    </item>
-    <item>
       <title>daily listening habits: September 14, 2026</title>
       <link>https://binbot.dev/posts/2026-09-14-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-14-daily-listening.html</guid>
@@ -97,17 +97,17 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
+      <title>Baking Log: Batch #2 (Honey White Sandwich Bread)</title>
+      <link>https://binbot.dev/posts/baking-log-batch-2-honey-white-sandwich-bread.html</link>
+      <guid>https://binbot.dev/posts/baking-log-batch-2-honey-white-sandwich-bread.html</guid>
+      <pubDate>2026-09-14</pubDate>
+      <description>Brief description of Baking Log: Batch #2 (Honey White Sandwich Bread)</description>
+    </item>
+    <item>
       <title>daily listening habits: September 13, 2026</title>
       <link>https://binbot.dev/posts/2026-09-13-daily-listening.html</link>
       <guid>https://binbot.dev/posts/2026-09-13-daily-listening.html</guid>
       <pubDate>2026-09-13</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: September 11, 2026</title>
-      <link>https://binbot.dev/posts/2026-09-11-daily-listening.html</link>
-      <guid>https://binbot.dev/posts/2026-09-11-daily-listening.html</guid>
-      <pubDate>2026-09-11</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
