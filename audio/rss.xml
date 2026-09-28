@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>binbot audio logs &amp; field recordings</title>
+    <link>https://binbot.dev/audio/</link>
+    <description>Field recordings, ambient soundscapes, and audio logs hosted on a retro Raspberry Pi.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Sep 2026 21:41:43 GMT</lastBuildDate>
+    <atom:link href="https://binbot.dev/audio/rss.xml" rel="self" type="application/rss+xml" />
+    <itunes:author>binbot</itunes:author>
+    <itunes:summary>Field recordings, ambient soundscapes, and audio logs hosted on a retro Raspberry Pi.</itunes:summary>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:category text="Music" />
+    <item>
+      <title>Temple Bells</title>
+      <link>https://binbot.dev/audio/</link>
+      <guid isPermaLink="false">https://binbot.dev/media/thailand_wind_temple.mp3</guid>
+      <pubDate>Fri, 24 May 2024 00:00:00 GMT</pubDate>
+      <description>Thailand: Temple Bellls</description>
+      <enclosure url="https://binbot.dev/media/thailand_wind_temple.mp3" length="541288" type="audio/mpeg" />
+      <itunes:duration>01:07</itunes:duration>
+      <itunes:summary>Thailand: Temple Bellls</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Andor at Cave Mountain Lake</title>
+      <link>https://binbot.dev/audio/</link>
+      <guid isPermaLink="false">https://binbot.dev/media/andor_camping.mp3</guid>
+      <pubDate>Sat, 28 Oct 2023 00:00:00 GMT</pubDate>
+      <description>Campground banter</description>
+      <enclosure url="https://binbot.dev/media/andor_camping.mp3" length="708468" type="audio/mpeg" />
+      <itunes:duration>01:28</itunes:duration>
+      <itunes:summary>Campground banter</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Campground Snoozes</title>
+      <link>https://binbot.dev/audio/</link>
+      <guid isPermaLink="false">https://binbot.dev/media/nb_snoozing_forest.mp3</guid>
+      <pubDate>Sat, 28 Oct 2023 00:00:00 GMT</pubDate>
+      <description>Taking a break at Cave Mountain Lake</description>
+      <enclosure url="https://binbot.dev/media/nb_snoozing_forest.mp3" length="1052032" type="audio/mpeg" />
+      <itunes:duration>02:11</itunes:duration>
+      <itunes:summary>Taking a break at Cave Mountain Lake</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Quiet stream</title>
+      <link>https://binbot.dev/audio/</link>
+      <guid isPermaLink="false">https://binbot.dev/media/quiet_stream.mp3</guid>
+      <pubDate>Sat, 28 Oct 2023 00:00:00 GMT</pubDate>
+      <description>Sitting by the stream, Cave Mountain Lake</description>
+      <enclosure url="https://binbot.dev/media/quiet_stream.mp3" length="1043674" type="audio/mpeg" />
+      <itunes:duration>02:10</itunes:duration>
+      <itunes:summary>Sitting by the stream, Cave Mountain Lake</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>Rolling</title>
+      <link>https://binbot.dev/audio/</link>
+      <guid isPermaLink="false">https://binbot.dev/media/rolling.mp3</guid>
+      <pubDate>Sat, 28 Oct 2023 00:00:00 GMT</pubDate>
+      <description>Rolling</description>
+      <enclosure url="https://binbot.dev/media/rolling.mp3" length="723099" type="audio/mpeg" />
+      <itunes:duration>01:30</itunes:duration>
+      <itunes:summary>Rolling</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+  </channel>
+</rss>
