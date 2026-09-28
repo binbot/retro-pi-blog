@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>binbot ~ /audio</title>
   <meta name="description" content="Audio logs and field recordings hosted on my Raspberry Pi.">
+  <link rel="alternate" type="application/rss+xml" title="binbot audio archive" href="/audio/rss.xml">
+  <link rel="alternate" type="application/rss+xml" title="binbot blog transmissions" href="/rss.xml">
   
   <link rel="stylesheet" href="/style.css?v=2.3">
 </head>
@@ -35,8 +37,13 @@
       <article>
         
       <section>
-        <h2>01. custom retro player</h2>
-        <p>this custom music player uses standard html5 audio APIs styled with simple, retro css borders. it requires no heavy third-party framework, keeping load time and execution memory near-zero for the server.</p>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+          <h2 style="margin-bottom: 0;">01. custom retro player</h2>
+          <a href="/audio/rss.xml" class="tag-link" target="_blank" title="Subscribe via Audio RSS / Podcast">[audio rss]</a>
+        </div>
+        <div style="margin-top: 0.8rem;">
+          <p>this custom music player uses standard html5 audio APIs styled with simple, retro css borders. it requires no heavy third-party framework, keeping load time and execution memory near-zero for the server.</p>
+        </div>
 
         <!-- Hidden native audio element -->
         <audio id="main-audio" style="display: none;"></audio>
@@ -134,7 +141,7 @@
     </main>
 
     <footer>
-      <p>served with care from a raspberry pi | <a href="https://github.com/binbot" target="_blank">github</a> | <a href="https://codeberg.org/binbot" target="_blank">codeberg</a> | <a href="mailto:binbot@binbot.dev">email</a></p>
+      <p>served with care from a raspberry pi | <a href="/rss.xml">rss</a> | <a href="/audio/rss.xml">audio rss</a> | <a href="https://github.com/binbot" target="_blank">github</a> | <a href="https://codeberg.org/binbot" target="_blank">codeberg</a> | <a href="mailto:binbot@binbot.dev">email</a></p>
       <div class="theme-selector" style="text-align: center; margin-top: 1rem; margin-bottom: 0;">
         Theme:
         <button class="theme-btn" data-set-theme="paper">Warm Paper</button>

@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>binbot ~ /blog</title>
   <meta name="description" content="Recent transmissions and articles hosted on my Raspberry Pi.">
+  <link rel="alternate" type="application/rss+xml" title="binbot blog transmissions" href="/rss.xml">
+  <link rel="alternate" type="application/rss+xml" title="binbot audio archive" href="/audio/rss.xml">
   
   <link rel="stylesheet" href="/style.css?v=2.3">
 </head>
@@ -34,8 +36,11 @@
     <main>
       <article>
               <section>
-        <h2>01. transmissions archive</h2>
-        <p>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+          <h2 style="margin-bottom: 0;">01. transmissions archive</h2>
+          <a href="/rss.xml" class="tag-link" target="_blank" title="Subscribe via RSS">[rss feed]</a>
+        </div>
+        <p style="margin-top: 0.8rem;">
           here you will find occasional thoughts, log entries, and documentation regarding systems design, retro hardware, audio recording, and minimalist programming.
         </p>
 
@@ -46,6 +51,10 @@
 
         <div style="margin-top: 1.5rem;" id="posts-container">
 <div class="year-divider" data-year="2026">── 2026 ──</div>
+          <div class="post-list-item" data-tags="music,navidrome,listening-log" data-year="2026">
+            <a href="/posts/2026-09-27-daily-listening.html">daily listening habits: September 27, 2026</a>
+            <span class="post-date">2026-09-27</span>
+          </div>
           <div class="post-list-item" data-tags="blog,linux,mac,yazi,minimalism,second_arrow" data-year="2026">
             <a href="/posts/digital-minimalism-and-the-second-arrow.html">Digital Minimalism and the Second Arrow</a>
             <span class="post-date">2026-09-26</span>
@@ -134,12 +143,12 @@
             <a href="/posts/2026-09-05-daily-listening.html">daily listening habits: September 05, 2026</a>
             <span class="post-date">2026-09-05</span>
           </div>
-          <div class="post-list-item" data-tags="blog,linux,hardware" data-year="2026">
-            <a href="/posts/resurrecting-the-x1-carbon-the-10-day-flea-power-cold-boot.html">Resurrecting the X1 Carbon: The 10-Day Flea Power Cold Boot</a>
-            <span class="post-date">2026-09-04</span>
-          </div>
           <div class="post-list-item" data-tags="music,navidrome,listening-log" data-year="2026">
             <a href="/posts/2026-09-04-daily-listening.html">daily listening habits: September 04, 2026</a>
+            <span class="post-date">2026-09-04</span>
+          </div>
+          <div class="post-list-item" data-tags="blog,linux,hardware" data-year="2026">
+            <a href="/posts/resurrecting-the-x1-carbon-the-10-day-flea-power-cold-boot.html">Resurrecting the X1 Carbon: The 10-Day Flea Power Cold Boot</a>
             <span class="post-date">2026-09-04</span>
           </div>
           <div class="post-list-item" data-tags="music,navidrome,listening-log" data-year="2026">
@@ -200,9 +209,9 @@
 HOST:         pipi
 OS:           Alpine Linux v3.20 [aarch64]
 KERNEL:       Linux 6.6.49-0-rpi aarch64
-UPTIME:       26 days, 12:35 (24/7 low-power outpost)
+UPTIME:       27 days, 10:49 (24/7 low-power outpost)
 LOAD:         0.00, 0.00, 0.00
-RAM:          87 MB / 908 MB (ultra-lightweight footprint)
+RAM:          88 MB / 908 MB (ultra-lightweight footprint)
 POWER:        ~1.0W low-power footprint (green hosted)
 ============================================================</code></pre>
       </section>
@@ -211,7 +220,7 @@ POWER:        ~1.0W low-power footprint (green hosted)
     </main>
 
     <footer>
-      <p>served with care from a raspberry pi | <a href="https://github.com/binbot" target="_blank">github</a> | <a href="https://codeberg.org/binbot" target="_blank">codeberg</a> | <a href="mailto:binbot@binbot.dev">email</a></p>
+      <p>served with care from a raspberry pi | <a href="/rss.xml">rss</a> | <a href="/audio/rss.xml">audio rss</a> | <a href="https://github.com/binbot" target="_blank">github</a> | <a href="https://codeberg.org/binbot" target="_blank">codeberg</a> | <a href="mailto:binbot@binbot.dev">email</a></p>
       <div class="theme-selector" style="text-align: center; margin-top: 1rem; margin-bottom: 0;">
         Theme:
         <button class="theme-btn" data-set-theme="paper">Warm Paper</button>
