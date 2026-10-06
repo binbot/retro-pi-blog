@@ -338,7 +338,7 @@ def render_html_page(title, subpath, status_text, body_html, description="", ext
 def fetch_pi_telemetry():
     """Fetch live hardware telemetry from Raspberry Pi (pipi)."""
     cmd = "uptime; free -m; uname -mrs; cat /etc/os-release"
-    hosts = ["binbot@pipi", "binbot@192.168.86.42", "binbot@100.99.56.3"]
+    hosts = ["binbot@pipi", "binbot@192.168.86.35", "binbot@100.99.56.3"]
     
     for h in hosts:
         try:
