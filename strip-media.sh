@@ -9,10 +9,12 @@ TARGET="${1:-${DIR}/media}"
 if [ -f "$TARGET" ]; then
   echo "Stripping EXIF metadata from file: $TARGET"
   magick mogrify -strip "$TARGET"
+  chmod 644 "$TARGET"
   echo "Done!"
 elif [ -d "$TARGET" ]; then
   echo "Stripping EXIF metadata from all images in: $TARGET"
   find "$TARGET" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" -o -iname "*.tiff" \) -exec magick mogrify -strip {} +
+  find "$TARGET" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" -o -iname "*.tiff" \) -exec chmod 644 {} +
   echo "Done! All images sanitized."
 else
   echo "Usage: ./strip-media.sh [path/to/image.jpg | path/to/folder]"

@@ -13,6 +13,7 @@ python3 "${DIR}/build.py"
 
 echo "=== 2. Syncing Website Files to Raspberry Pi (${PI_HOST}) ==="
 rsync -avz --delete \
+  --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
   --exclude=".git" \
   --exclude=".gitignore" \
   --exclude="content" \
