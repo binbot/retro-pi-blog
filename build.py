@@ -55,6 +55,7 @@ def strip_exif_metadata(media_dir=MEDIA_DIR):
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.DEVNULL
                 )
+                os.chmod(fpath, 0o644)
                 stripped_count += 1
             except Exception:
                 pass
