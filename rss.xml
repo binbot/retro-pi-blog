@@ -5,7 +5,7 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 15:50:12 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 22:13:35 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alpine Pi</title>
@@ -13,6 +13,13 @@
       <guid isPermaLink="true">https://binbot.dev/posts/alpine-pi.html</guid>
       <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
       <description>My Raspberry Pi Runs Alpine Linux</description>
+    </item>
+    <item>
+      <title>daily listening habits: October 08, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-08-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-08-daily-listening.html</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
       <title>daily listening habits: October 07, 2026</title>
@@ -106,18 +113,18 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>What a Qute Browser!</title>
-      <link>https://binbot.dev/posts/what-a-qute-browser.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/what-a-qute-browser.html</guid>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
-      <description>Brief description of What a Qute Browser!</description>
-    </item>
-    <item>
       <title>daily listening habits: September 25, 2026</title>
       <link>https://binbot.dev/posts/2026-09-25-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-09-25-daily-listening.html</guid>
       <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>What a Qute Browser!</title>
+      <link>https://binbot.dev/posts/what-a-qute-browser.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/what-a-qute-browser.html</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Brief description of What a Qute Browser!</description>
     </item>
     <item>
       <title>daily listening habits: September 24, 2026</title>
@@ -138,13 +145,6 @@
       <link>https://binbot.dev/posts/2026-09-20-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-09-20-daily-listening.html</guid>
       <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: September 19, 2026</title>
-      <link>https://binbot.dev/posts/2026-09-19-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-09-19-daily-listening.html</guid>
-      <pubDate>Sat, 19 Sep 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
