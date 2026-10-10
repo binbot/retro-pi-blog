@@ -5,7 +5,7 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2026 18:57:33 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 22:35:35 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Baking Log: Batch #4 (White Sandwich Bread)</title>
@@ -15,10 +15,10 @@
       <description>The Sugar Variable</description>
     </item>
     <item>
-      <title>daily listening habits: October 08, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-08-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-08-daily-listening.html</guid>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <title>daily listening habits: October 09, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-09-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-09-daily-listening.html</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
@@ -27,6 +27,13 @@
       <guid isPermaLink="true">https://binbot.dev/posts/alpine-pi.html</guid>
       <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
       <description>My Raspberry Pi Runs Alpine Linux</description>
+    </item>
+    <item>
+      <title>daily listening habits: October 08, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-08-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-08-daily-listening.html</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
       <title>daily listening habits: October 07, 2026</title>
@@ -138,13 +145,6 @@
       <link>https://binbot.dev/posts/2026-09-24-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-09-24-daily-listening.html</guid>
       <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: September 21, 2026</title>
-      <link>https://binbot.dev/posts/2026-09-21-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-09-21-daily-listening.html</guid>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
