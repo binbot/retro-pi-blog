@@ -508,7 +508,7 @@ def build_blog_index(posts):
           <a href="/rss.xml" class="tag-link" target="_blank" title="Subscribe via RSS">[rss feed]</a>
         </div>
         <p style="margin-top: 0.8rem;">
-          here you will find occasional thoughts, log entries, and documentation regarding systems design, retro hardware, audio recording, and minimalist programming.
+          daily listening logs, plus occasional notes and documentation on linux, homelab setups, bread making, field recording, yoga, and side projects.daily listening logs, plus occasional notes and documentation on linux, homelab setups, bread making, field recording, yoga, and side projects.
         </p>
 
         {filter_bar_html}
