@@ -2,7 +2,7 @@
 title: Resurrecting the X1 Carbon: The 10-Day Flea Power Cold Boot
 date: 2026-09-04
 description: Brief description of Resurrecting the X1 Carbon: The 10-Day Flea Power Cold Boot
-tags: blog, linux, hardware
+tags: blog, nixos, linux, hardware
 slug: resurrecting-the-x1-carbon-the-10-day-flea-power-cold-boot
 ---
 
