@@ -49,14 +49,20 @@ def strip_exif_metadata(media_dir=MEDIA_DIR):
         if fname.lower().endswith(valid_exts):
             fpath = os.path.join(media_dir, fname)
             try:
-                subprocess.run(
-                    ["magick", "mogrify", "-strip", fpath],
-                    check=True,
-                    stdout=subprocess.DEVNULL,
-                    stderr=subprocess.DEVNULL
+                check = subprocess.run(
+                    ["magick", "identify", "-format", "%[exif:*]%[iptc:*]%[xmp:*]", fpath],
+                    capture_output=True,
+                    text=True
                 )
-                os.chmod(fpath, 0o644)
-                stripped_count += 1
+                if check.stdout.strip():
+                    subprocess.run(
+                        ["magick", "mogrify", "-strip", fpath],
+                        check=True,
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL
+                    )
+                    os.chmod(fpath, 0o644)
+                    stripped_count += 1
             except Exception:
                 pass
     return stripped_count
