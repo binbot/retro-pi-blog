@@ -351,7 +351,7 @@ def fetch_pi_telemetry():
         try:
             res = subprocess.run(
                 ["ssh", "-o", "ConnectTimeout=2", "-o", "BatchMode=yes", h, cmd],
-                capture_output=True, text=True, check=True
+                capture_output=True, text=True, check=True, timeout=3
             )
             lines = [l.strip() for l in res.stdout.strip().splitlines() if l.strip()]
 
