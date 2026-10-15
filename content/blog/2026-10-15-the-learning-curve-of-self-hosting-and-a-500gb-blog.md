@@ -1,7 +1,7 @@
 ---
 title: The Learning Curve of Self-hosting and a 500 mb Blog
 date: 2026-10-15
-description: Diagnosing an accidental 546 mb git folder, navigating the self-hosting learning curve, and wondering what happens when you force-push your own life.
+description: Diagnosing an accidental 759 mb git folder, navigating the self-hosting learning curve, and wondering what happens when you force-push your own life.
 tags: blog, linux, self-hosting, diy, git, web, codeberg
 slug: the-learning-curve-of-self-hosting-and-a-500mb-blog
 ---
@@ -12,7 +12,7 @@ When you get into self-hosting, you quickly realize it isn't just about spinning
 
 A personal blog is supposed to be simple. A handful of Markdown files, a few static stylesheets, maybe some audio clips and photos of homemade bread. Yet a routine check on disk usage showed something wild: my blog repository had ballooned to over half a gigabyte.
 
-At 546 MB, my first thought went straight to Codeberg.
+At 759 MB, my first thought went straight to Codeberg.
 
 Codeberg is a donation-backed, community-run non-profit for free and open-source software. They generously provide Codeberg Pages for static sites, but their terms clearly state that Codeberg is not a personal cloud locker, backup drive, or media dump. Their acceptable use policy has a 100 MB soft limit on personal repositories like blogs and dotfiles.
 
@@ -29,7 +29,7 @@ At first, moving my media to external cloud storage or setting up a bare Git rep
 To see where the extra weight was hiding, I checked the actual site files against Git's hidden history folder:
 
 * **Working files on disk:** ~70 MB (mostly images in `media/`)
-* **`.git` folder:** **546 MB**
+* **`.git` folder:** **759 MB**
 
 The live site wasn't the problem. The bloat was entirely in the history—invisible baggage piling up inside Git's storage files.
 
@@ -93,7 +93,7 @@ Now, if an image has already been cleaned, ImageMagick leaves it alone. The file
 After making a full backup (`git bundle create backup.bundle --all`), I used `git-filter-repo` to clean out the old duplicate versions of `media/*` while keeping the current, clean copies.
 
 The cleanup worked right away:
-* `.git` dropped from 546 MB down to 70 MB (an 87% drop).
+* `.git` dropped from 759 MB down to 70 MB (an 87% drop).
 * Commit messages, dates, and text history stayed 100% intact.
 * I didn't have to move any photos to external cloud storage, and my scripts (`deploy.sh`, `new-audio.sh`, `new-post.sh`) kept working without a hitch.
 

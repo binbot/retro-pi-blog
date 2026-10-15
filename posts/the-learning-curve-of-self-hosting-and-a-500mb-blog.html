@@ -10,7 +10,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Learning Curve of Self-hosting and a 500 mb Blog</title>
-  <meta name="description" content="Diagnosing an accidental 546 mb git folder, navigating the self-hosting learning curve, and wondering what happens when you force-push your own life.">
+  <meta name="description" content="Diagnosing an accidental 759 mb git folder, navigating the self-hosting learning curve, and wondering what happens when you force-push your own life.">
   <link rel="alternate" type="application/rss+xml" title="binbot blog transmissions" href="/rss.xml">
   <link rel="alternate" type="application/rss+xml" title="binbot audio archive" href="/audio/rss.xml">
   
@@ -38,7 +38,7 @@
         <h2>01. The Self-Hosting Learning Curve</h2>
 <p>When you get into self-hosting, you quickly realize it isn't just about spinning up a service and letting it run. It’s an ongoing series of small lessons, usually triggered by something quietly breaking behind the scenes. You think you’re just setting up a modest corner of the internet, but you’re actually signing up to maintain all the plumbing yourself.</p>
 <p>A personal blog is supposed to be simple. A handful of Markdown files, a few static stylesheets, maybe some audio clips and photos of homemade bread. Yet a routine check on disk usage showed something wild: my blog repository had ballooned to over half a gigabyte.</p>
-<p>At 546 MB, my first thought went straight to Codeberg.</p>
+<p>At 759 MB, my first thought went straight to Codeberg.</p>
 <p>Codeberg is a donation-backed, community-run non-profit for free and open-source software. They generously provide Codeberg Pages for static sites, but their terms clearly state that Codeberg is not a personal cloud locker, backup drive, or media dump. Their acceptable use policy has a 100 MB soft limit on personal repositories like blogs and dotfiles.</p>
 <p><div style="text-align: center; margin: 1.5rem 0;"><img src="/media/on-the-heavy-side.png" alt="A little on the heavy side" style="max-width: 100%; height: auto; border: 1px solid var(--border-color); padding: 4px; background: var(--card-bg);" /><p class="text-muted" style="font-size: 0.8rem; margin-top: 0.5rem;">[fig: A little on the heavy side]</p></div></p>
 <p>Pushing a 550 MB pile of files felt like a breach of good manners. GitHub has a 1 GB soft limit, but even there, stuffing huge image histories into Git guarantees friction down the road.</p>
@@ -48,7 +48,7 @@
 <p>To see where the extra weight was hiding, I checked the actual site files against Git's hidden history folder:</p>
 <ul>
   <li><strong>Working files on disk:</strong> ~70 MB (mostly images in <code>media/</code>)</li>
-  <li><strong><code>.git</code> folder:</strong> <strong>546 MB</strong></li>
+  <li><strong><code>.git</code> folder:</strong> <strong>759 MB</strong></li>
 </ul>
 <p>The live site wasn't the problem. The bloat was entirely in the history—invisible baggage piling up inside Git's storage files.</p>
 <p>Digging into Git's history revealed the culprit: single JPEG files had over 100 saved versions. Every single deploy was re-saving and re-uploading the exact same photos:</p>
@@ -86,7 +86,7 @@ if check.stdout.strip():
 <p>After making a full backup (<code>git bundle create backup.bundle --all</code>), I used <code>git-filter-repo</code> to clean out the old duplicate versions of <code>media/*</code> while keeping the current, clean copies.</p>
 <p>The cleanup worked right away:</p>
 <ul>
-  <li><code>.git</code> dropped from 546 MB down to 70 MB (an 87% drop).</li>
+  <li><code>.git</code> dropped from 759 MB down to 70 MB (an 87% drop).</li>
   <li>Commit messages, dates, and text history stayed 100% intact.</li>
   <li>I didn't have to move any photos to external cloud storage, and my scripts (<code>deploy.sh</code>, <code>new-audio.sh</code>, <code>new-post.sh</code>) kept working without a hitch.</li>
 </ul>
