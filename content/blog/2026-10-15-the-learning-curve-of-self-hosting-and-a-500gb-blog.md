@@ -2,7 +2,7 @@
 title: The Learning Curve of Self-hosting and a 500 mb Blog
 date: 2026-10-15
 description: Diagnosing an accidental 546 mb git folder, navigating the self-hosting learning curve, and wondering what happens when you force-push your own life.
-tags: blog, linux, self-hosting, diy, git, codeberg
+tags: blog, linux, self-hosting, diy, git, web, codeberg
 slug: the-learning-curve-of-self-hosting-and-a-500mb-blog
 ---
 
