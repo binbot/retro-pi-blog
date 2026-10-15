@@ -16,7 +16,7 @@ At 546 MB, my first thought went straight to Codeberg.
 
 Codeberg is a donation-backed, community-run non-profit for free and open-source software. They generously provide Codeberg Pages for static sites, but their terms clearly state that Codeberg is not a personal cloud locker, backup drive, or media dump. Their acceptable use policy has a 100 MB soft limit on personal repositories like blogs and dotfiles.
 
-[A little on the heavy side](/media/on-the-heavy-side.png)
+![A little on the heavy side](/media/on-the-heavy-side.png)
 
 Pushing a 550 MB pile of files felt like a breach of good manners. GitHub has a 1 GB soft limit, but even there, stuffing huge image histories into Git guarantees friction down the road.
 
