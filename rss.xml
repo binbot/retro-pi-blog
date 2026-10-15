@@ -5,12 +5,12 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 14:44:29 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 14:48:14 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The Learning Curve of Self-hosting and a 500 mb Blog</title>
-      <link>https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-500mb-blog.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-500mb-blog.html</guid>
+      <title>The Learning Curve of Self-hosting and a Half-Gigabyte Blog</title>
+      <link>https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-half-gigabyte-blog.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-half-gigabyte-blog.html</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description>Diagnosing an accidental 759 mb git folder, navigating the self-hosting learning curve, and wondering what happens when you force-push your own life.</description>
     </item>
