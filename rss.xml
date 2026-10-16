@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 14:48:14 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 22:20:29 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily listening habits: October 15, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-15-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-15-daily-listening.html</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
     <item>
       <title>The Learning Curve of Self-hosting and a Half-Gigabyte Blog</title>
       <link>https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-half-gigabyte-blog.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://binbot.dev/posts/baking-log-batch-3-honey-white-sandwich-bread.html</guid>
       <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
       <description>Baking Log: Batch #3 (Honey White Sandwich Bread)</description>
-    </item>
-    <item>
-      <title>daily listening habits: September 29, 2026</title>
-      <link>https://binbot.dev/posts/2026-09-29-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-09-29-daily-listening.html</guid>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
 </rss>
