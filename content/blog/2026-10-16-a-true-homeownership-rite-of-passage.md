@@ -6,7 +6,7 @@ tags: blog, diy, crawlspace, homeownership
 slug: a-true-homeownership-rite-of-passage
 ---
 
-## 01. introduction
+## 01. Introduction
 
 It had been really stinking in the house for about three days. 
 
@@ -16,7 +16,7 @@ It just kind of kept smelling. Then the smell started moving into the middle of 
 
 As the days went on, the smell got worse. I opened some windows. You wouldn't smell it so much upstairs, maybe just an occasional whiff, but downstairs was like: whoa. You could really smell it. I left the back door open to air things out, and finally April and I were talking about it. We realized: you know what? Either we've got some sort of dead animal underneath the house in the crawl space, or something is seriously wrong.
 
-## Gearing Up for the Depths
+## 02. Gearing Up for the Depths
 
 Then today came. We woke up, and as soon as we got out of bed, we could smell it immediately. It hit us right away: *Oh my god, we've got to do something about this.*
 
@@ -33,7 +33,7 @@ I got down on my hands and knees, then lay flat on my stomach, and crawled into 
 
 ![entrance to the abyss](/media/the_abyss.jpg)
 
-## Into the Dark
+## 03. Into the Dark
 
 That crawl space is dark. There are no lights down there at all. It's just a dirt floor covered in plastic tarps, very dirty, with old insulation hanging down everywhere. It is seriously hard to see anything. In only a few spots can you even manage to stay on your hands and knees. In other spots, you have to be completely flat on your stomach. 
 
@@ -46,7 +46,7 @@ And of course, that second area is right where the critter decided to go.
 
 I spent time searching around the first area and couldn't find a thing. I was starting to get worried that I wouldn't be able to track it down at all. But then I pushed into the second part of the house, right into one of the absolute hardest spots to reach. The ceiling is so low that I could only get to it on my stomach. At best, I could prop myself up slightly on my elbows, but mostly I was just dragging myself along flat.
 
-## Face-to-Face with the Beast
+## 04. Face-to-Face with the Beast
 
 And there he was. A big old possum. Dead as a doornail, and really, really stinking. 
 
@@ -56,7 +56,7 @@ Then came the hard part: laying flat on my stomach, scootching backward along th
 
 Finally, I made it to the light, hauled everything out, scooped him securely into the bag with the shovel, tied it tight, and tossed it into the trash can outside.
 
-## Mission Accomplished
+## 05. Mission Accomplished
 
 I have never done anything like this in my entire life. Absolutely crazy. 
 
