@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 23:30:19 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 22:13:08 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily listening habits: October 19, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-19-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-19-daily-listening.html</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
     <item>
       <title>A True Homeownership Rite of Passage</title>
       <link>https://binbot.dev/posts/a-true-homeownership-rite-of-passage.html</link>
@@ -138,13 +145,6 @@
       <link>https://binbot.dev/posts/2026-10-03-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-10-03-daily-listening.html</guid>
       <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: October 02, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-02-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-02-daily-listening.html</guid>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
