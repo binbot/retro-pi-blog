@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 22:42:45 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 23:09:49 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily listening habits: October 22, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-22-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-22-daily-listening.html</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
     <item>
       <title>daily listening habits: October 21, 2026</title>
       <link>https://binbot.dev/posts/2026-10-21-daily-listening.html</link>
@@ -29,13 +36,6 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>daily listening habits: October 16, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-16-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-16-daily-listening.html</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
       <title>A True Homeownership Rite of Passage</title>
       <link>https://binbot.dev/posts/a-true-homeownership-rite-of-passage.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/a-true-homeownership-rite-of-passage.html</guid>
@@ -43,11 +43,11 @@
       <description>Into the Crawlspace:The Stench, The Shovel, and The Beast</description>
     </item>
     <item>
-      <title>The Learning Curve of Self-hosting and a Half-Gigabyte Blog</title>
-      <link>https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-half-gigabyte-blog.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-half-gigabyte-blog.html</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Diagnosing an accidental 759 mb git folder, navigating the self-hosting learning curve, and wondering what happens when you force-push your own life.</description>
+      <title>daily listening habits: October 16, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-16-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-16-daily-listening.html</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
       <title>daily listening habits: October 15, 2026</title>
@@ -55,6 +55,13 @@
       <guid isPermaLink="true">https://binbot.dev/posts/2026-10-15-daily-listening.html</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>The Learning Curve of Self-hosting and a Half-Gigabyte Blog</title>
+      <link>https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-half-gigabyte-blog.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-half-gigabyte-blog.html</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Diagnosing an accidental 759 mb git folder, navigating the self-hosting learning curve, and wondering what happens when you force-push your own life.</description>
     </item>
     <item>
       <title>daily listening habits: October 14, 2026</title>
@@ -99,13 +106,6 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>daily listening habits: October 09, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-09-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-09-daily-listening.html</guid>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
       <title>Baking Log: Batch #4 (White Sandwich Bread)</title>
       <link>https://binbot.dev/posts/baking-log-batch-4-white-sandwich-bread.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/baking-log-batch-4-white-sandwich-bread.html</guid>
@@ -113,11 +113,11 @@
       <description>The Sugar Variable</description>
     </item>
     <item>
-      <title>Alpine Pi</title>
-      <link>https://binbot.dev/posts/alpine-pi.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/alpine-pi.html</guid>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
-      <description>My Raspberry Pi Runs Alpine Linux</description>
+      <title>daily listening habits: October 09, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-09-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-09-daily-listening.html</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
       <title>daily listening habits: October 08, 2026</title>
@@ -125,6 +125,13 @@
       <guid isPermaLink="true">https://binbot.dev/posts/2026-10-08-daily-listening.html</guid>
       <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>Alpine Pi</title>
+      <link>https://binbot.dev/posts/alpine-pi.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/alpine-pi.html</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>My Raspberry Pi Runs Alpine Linux</description>
     </item>
     <item>
       <title>daily listening habits: October 07, 2026</title>
@@ -138,13 +145,6 @@
       <link>https://binbot.dev/posts/2026-10-06-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-10-06-daily-listening.html</guid>
       <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: October 05, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-05-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-05-daily-listening.html</guid>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
