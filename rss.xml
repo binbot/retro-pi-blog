@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 23:09:49 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 22:31:54 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily listening habits: October 23, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-23-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-23-daily-listening.html</guid>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
     <item>
       <title>daily listening habits: October 22, 2026</title>
       <link>https://binbot.dev/posts/2026-10-22-daily-listening.html</link>
@@ -50,18 +57,18 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>daily listening habits: October 15, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-15-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-15-daily-listening.html</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
       <title>The Learning Curve of Self-hosting and a Half-Gigabyte Blog</title>
       <link>https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-half-gigabyte-blog.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-half-gigabyte-blog.html</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description>Diagnosing an accidental 759 mb git folder, navigating the self-hosting learning curve, and wondering what happens when you force-push your own life.</description>
+    </item>
+    <item>
+      <title>daily listening habits: October 15, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-15-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-15-daily-listening.html</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
       <title>daily listening habits: October 14, 2026</title>
@@ -120,13 +127,6 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>daily listening habits: October 08, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-08-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-08-daily-listening.html</guid>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
       <title>Alpine Pi</title>
       <link>https://binbot.dev/posts/alpine-pi.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/alpine-pi.html</guid>
@@ -134,17 +134,17 @@
       <description>My Raspberry Pi Runs Alpine Linux</description>
     </item>
     <item>
+      <title>daily listening habits: October 08, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-08-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-08-daily-listening.html</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
       <title>daily listening habits: October 07, 2026</title>
       <link>https://binbot.dev/posts/2026-10-07-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-10-07-daily-listening.html</guid>
       <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: October 06, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-06-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-06-daily-listening.html</guid>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
