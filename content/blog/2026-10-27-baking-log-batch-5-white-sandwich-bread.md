@@ -1,5 +1,5 @@
 ---
-title: Baking Log: Batch #5 - White Sandwich Bread
+title: Baking Log: Batch #5 (White Sandwich Bread)
 date: 2026-10-27
 description: Brief description of Baking Log: Batch #5 - White Sandwich Bread
 tags: blog, bread-log, sugar
