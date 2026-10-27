@@ -8,7 +8,7 @@ slug: baking-log-batch-5-white-sandwich-bread
 
 ## 01. introduction
 
-![Hudson ~cat~ Cream](/media/hudson-cream.jpg)
+![Hudson ~cat~ Cream](/media/hudson_cream.jpg)
 
 Continuing the bi-weekly bread experiments using the [Tastes Better From Scratch](https://tastesbetterfromscratch.com/bread-recipe/) homemade bread recipe as the baseline. For Batch #5, I stuck with 100% [Hudson Cream Flour](https://www.hudsoncream.com/) and used granulated sugar again rather than honey.
 
