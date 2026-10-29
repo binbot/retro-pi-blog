@@ -16,6 +16,7 @@ from datetime import datetime, timezone
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 CONTENT_DIR = os.path.join(ROOT_DIR, "content")
 MEDIA_DIR = os.path.join(ROOT_DIR, "media")
+SITE_URL = "https://binbot.dev"
 
 def format_rfc822_date(date_str):
     """Convert YYYY-MM-DD or ISO timestamp string into standard RFC 822 format for RSS feeds."""
@@ -267,7 +268,117 @@ def markdown_to_html(md_text):
     return "\n".join(html_lines)
 
 
-def render_html_page(title, subpath, status_text, body_html, description="", extra_head="", is_post=False, post_date="", tags=""):
+def strip_markdown_inline(text):
+    """Strip inline Markdown formatting to produce clean plain text."""
+    text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
+    text = re.sub(r'\[audio:\s*[^\|]+\s*\|[^\]]*\]', '', text)
+    text = re.sub(r'\[(.*?)\]\(.*?\)', r'\1', text)
+    text = re.sub(r'\*\*(.*?)\*\*', r'\1', text)
+    text = re.sub(r'__(.*?)__', r'\1', text)
+    text = re.sub(r'~~(.*?)~~', r'\1', text)
+    text = re.sub(r'~(.*?)~', r'\1', text)
+    text = re.sub(r'(?<!\*)\*([^\*]+)\*(?!\*)', r'\1', text)
+    text = re.sub(r'`([^`]+)`', r'\1', text)
+    return re.sub(r'\s+', ' ', text).strip()
+
+
+def extract_post_summary(md_text, max_len=200):
+    """Extract the opening prose from Markdown body for meta/Open Graph descriptions."""
+    cleaned_md = re.sub(r'<!--.*?-->', '', md_text, flags=re.DOTALL)
+    paragraphs = []
+    in_code_block = False
+
+    for line in cleaned_md.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_code_block = not in_code_block
+            continue
+        if in_code_block or not stripped:
+            continue
+        if (
+            stripped.startswith("#")
+            or stripped.startswith(">")
+            or stripped.startswith("![")
+            or stripped.startswith("[audio:")
+            or (stripped.startswith("|") and stripped.endswith("|"))
+            or (stripped.startswith("<") and stripped.endswith(">"))
+            or re.match(r'^(---|\*\*\*|___)$', stripped)
+            or re.match(r'^[-*]\s+', stripped)
+            or re.match(r'^\d+\.\s+', stripped)
+        ):
+            continue
+
+        plain = strip_markdown_inline(stripped)
+        if plain:
+            paragraphs.append(plain)
+            if len(paragraphs) >= 2:
+                break
+
+    if not paragraphs:
+        return ""
+
+    summary = paragraphs[0]
+    if len(summary) < 65 and len(paragraphs) > 1:
+        summary = f"{summary} {paragraphs[1]}"
+
+    if len(summary) > max_len:
+        cutoff = summary[: max_len - 3].rsplit(" ", 1)[0]
+        summary = cutoff.rstrip(" ,;:-") + "..."
+
+    return summary
+
+
+def resolve_site_url(path_or_url):
+    """Convert relative site paths into absolute https://binbot.dev URLs."""
+    val = path_or_url.strip()
+    if not val:
+        return ""
+    if val.startswith("http://binbot.dev/"):
+        return "https://binbot.dev/" + val[len("http://binbot.dev/"):]
+    if val.startswith("http://") or val.startswith("https://"):
+        return val
+    return f"{SITE_URL}/{val.lstrip('/')}"
+
+
+def extract_first_image(md_text, meta=None):
+    """Find explicit frontmatter image or first Markdown/HTML image in post body."""
+    if meta and meta.get("image"):
+        return resolve_site_url(meta["image"]), strip_markdown_inline(meta.get("image_alt", ""))
+
+    cleaned_md = re.sub(r'```.*?```', '', md_text, flags=re.DOTALL)
+    cleaned_md = re.sub(r'<!--.*?-->', '', cleaned_md, flags=re.DOTALL)
+
+    m_md = re.search(r'!\[(.*?)\]\((.*?)\)', cleaned_md)
+    if m_md:
+        alt_text = strip_markdown_inline(m_md.group(1))
+        img_url = resolve_site_url(m_md.group(2))
+        return img_url, alt_text
+
+    m_html = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', cleaned_md, flags=re.IGNORECASE)
+    if m_html:
+        img_url = resolve_site_url(m_html.group(1))
+        m_alt = re.search(r'alt=["\']([^"\']*)["\']', m_html.group(0), flags=re.IGNORECASE)
+        alt_text = m_alt.group(1).strip() if m_alt else ""
+        return img_url, alt_text
+
+    return "", ""
+
+
+def render_html_page(
+    title,
+    subpath,
+    status_text,
+    body_html,
+    description="",
+    extra_head="",
+    is_post=False,
+    post_date="",
+    tags="",
+    canonical_path="",
+    og_image="",
+    og_image_alt="",
+    include_og=True,
+):
     """Wrap rendered content in Pure Data layout."""
     tags_html = ""
     if tags:
@@ -282,6 +393,33 @@ def render_html_page(title, subpath, status_text, body_html, description="", ext
   <link rel="alternate" type="application/rss+xml" title="binbot blog transmissions" href="/rss.xml">""" if subpath.startswith("/audio") else """  <link rel="alternate" type="application/rss+xml" title="binbot blog transmissions" href="/rss.xml">
   <link rel="alternate" type="application/rss+xml" title="binbot audio archive" href="/audio/rss.xml">"""
 
+    social_meta_lines = []
+    if include_og:
+        canonical_url = resolve_site_url(canonical_path) if canonical_path else SITE_URL
+        og_type = "article" if is_post else "website"
+        social_meta_lines.extend([
+            f'  <link rel="canonical" href="{html.escape(canonical_url)}">',
+            '  <meta property="og:site_name" content="binbot">',
+            f'  <meta property="og:type" content="{og_type}">',
+            f'  <meta property="og:title" content="{html.escape(title)}">',
+            f'  <meta property="og:description" content="{html.escape(description)}">',
+            f'  <meta property="og:url" content="{html.escape(canonical_url)}">',
+        ])
+        if is_post and post_date:
+            social_meta_lines.append(f'  <meta property="article:published_time" content="{html.escape(post_date)}">')
+        if og_image:
+            social_meta_lines.append(f'  <meta property="og:image" content="{html.escape(og_image)}">')
+            if og_image_alt:
+                social_meta_lines.append(f'  <meta property="og:image:alt" content="{html.escape(og_image_alt)}">')
+            social_meta_lines.append('  <meta name="twitter:card" content="summary_large_image">')
+            social_meta_lines.append(f'  <meta name="twitter:image" content="{html.escape(og_image)}">')
+        else:
+            social_meta_lines.append('  <meta name="twitter:card" content="summary">')
+        social_meta_lines.append(f'  <meta name="twitter:title" content="{html.escape(title)}">')
+        social_meta_lines.append(f'  <meta name="twitter:description" content="{html.escape(description)}">')
+
+    social_meta_block = ("\n" + "\n".join(social_meta_lines)) if social_meta_lines else ""
+
     return f"""<!DOCTYPE html>
 <!--
   DO NOT EDIT THIS FILE DIRECTLY!
@@ -294,7 +432,7 @@ def render_html_page(title, subpath, status_text, body_html, description="", ext
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
-  <meta name="description" content="{html.escape(description)}">
+  <meta name="description" content="{html.escape(description)}">{social_meta_block}
 {feed_discovery}
   {extra_head}
   <link rel="stylesheet" href="/style.css?v=2.3">
@@ -431,8 +569,18 @@ def build_posts():
 
         date_str = meta.get("date", "2026-01-01")
         title = meta.get("title", slug.replace("-", " "))
-        description = meta.get("description", f"Transmission {title} on binbot.dev")
+        raw_desc = meta.get("description", "").strip()
+        if (
+            not raw_desc
+            or raw_desc.lower().startswith("brief description of")
+            or raw_desc.lower() == title.strip().lower()
+        ):
+            description = extract_post_summary(body) or f"Transmission {title} on binbot.dev"
+        else:
+            description = raw_desc
         tags = meta.get("tags", "")
+        post_url = f"/posts/{slug}.html"
+        og_image, og_image_alt = extract_first_image(body, meta)
 
         body_html = markdown_to_html(body)
         full_html = render_html_page(
@@ -443,7 +591,10 @@ def build_posts():
             description=description,
             is_post=True,
             post_date=date_str,
-            tags=tags
+            tags=tags,
+            canonical_path=post_url,
+            og_image=og_image,
+            og_image_alt=og_image_alt,
         )
 
         out_file = os.path.join(out_dir, f"{slug}.html")
@@ -535,7 +686,8 @@ def build_blog_index(posts):
         subpath="/blog",
         status_text="transmissions: archived",
         body_html=body_html,
-        description="Recent transmissions and articles hosted on my Raspberry Pi."
+        description="Recent transmissions and articles hosted on my Raspberry Pi.",
+        canonical_path="/blog/",
     )
 
     with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as f:
@@ -583,13 +735,17 @@ def build_about():
     with open(src, "r", encoding="utf-8") as f:
         content = f.read()
     meta, body = parse_frontmatter(content)
+    og_image, og_image_alt = extract_first_image(body, meta)
     body_html = markdown_to_html(body)
     full_html = render_html_page(
         title=meta.get("title", "binbot ~ /about"),
         subpath="/about",
         status_text=meta.get("status", "load: nominal"),
         body_html=body_html,
-        description=meta.get("description", "About binbot")
+        description=meta.get("description", "About binbot"),
+        canonical_path="/about/",
+        og_image=og_image,
+        og_image_alt=og_image_alt,
     )
     out_dir = os.path.join(ROOT_DIR, "about")
     os.makedirs(out_dir, exist_ok=True)
@@ -794,7 +950,8 @@ def build_audio():
         subpath="/audio",
         status_text=meta.get("status", "media: local_playback"),
         body_html=player_html + extra_body_html,
-        description=meta.get("description", "Audio logs and recordings")
+        description=meta.get("description", "Audio logs and recordings"),
+        canonical_path="/audio/",
     )
     with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(full_html)
@@ -841,7 +998,8 @@ def build_cv():
         status_text=meta.get("status", "document: cv_resume_v2.0"),
         body_html=cv_top_bar + body_html,
         description=meta.get("description", "Benjamin Scott CV"),
-        extra_head=print_style
+        extra_head=print_style,
+        include_og=False,
     )
     with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(full_html)
