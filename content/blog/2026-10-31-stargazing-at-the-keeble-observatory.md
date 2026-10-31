@@ -31,6 +31,7 @@ Before we left, the students handed out paper passports so if you return on futu
   <img src="/media/polaris_stamped.jpg" alt="polaris stamped" style="width: 48%;" />
 </div>
 
+
 I think I will go back on another clear night in November to see more, as my interest is piqued on what else might be viewable over the next month or two. 
 
 Overall, I give the Keeble Observatory an 8.5/10. Just make sure you hit it on a clear night.
