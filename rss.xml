@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2026 23:25:20 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 21:46:29 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily listening habits: October 30, 2026</title>
+      <link>https://binbot.dev/posts/2026-10-30-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-30-daily-listening.html</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
     <item>
       <title>daily listening habits: October 29, 2026</title>
       <link>https://binbot.dev/posts/2026-10-29-daily-listening.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://binbot.dev/posts/instant-theme-swapping-on-nixos.html</guid>
       <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
       <description>Using flavours for Instant Theme Swapping on NixOS</description>
-    </item>
-    <item>
-      <title>daily listening habits: October 11, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-11-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-11-daily-listening.html</guid>
-      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
 </rss>
