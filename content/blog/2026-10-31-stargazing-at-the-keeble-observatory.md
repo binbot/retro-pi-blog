@@ -27,9 +27,9 @@ It was really cool being inside the observatory and checking out the main telesc
 Before we left, the students handed out paper passports so if you return on future nights, you can get stamps for the things you have seen. Cool touch.
 
 <div style="text-align: center; margin: 1.5rem 0;">
-  <div style="display: flex; justify-content: center; align-items: flex-start; gap: 10px;">
-    <img src="/media/passport.jpg" alt="passport" style="width: calc(50% - 5px); height: auto; border: 1px solid var(--border-color); padding: 4px; background: var(--card-bg);" />
-    <img src="/media/polaris_stamped.jpg" alt="polaris stamped" style="width: calc(50% - 5px); height: auto; border: 1px solid var(--border-color); padding: 4px; background: var(--card-bg);" />
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="/media/passport.jpg" alt="passport" style="width: calc(50% - 5px); aspect-ratio: 3 / 4; object-fit: cover; border: 1px solid var(--border-color); padding: 4px; background: var(--card-bg);" />
+    <img src="/media/polaris_stamped.jpg" alt="polaris stamped" style="width: calc(50% - 5px); aspect-ratio: 3 / 4; object-fit: cover; border: 1px solid var(--border-color); padding: 4px; background: var(--card-bg);" />
   </div>
   <p class="text-muted" style="font-size: 0.8rem; margin-top: 0.5rem;">[fig: Keeble passport]</p>
 </div>
