@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2026 22:33:39 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 22:18:25 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily listening habits: November 03, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-03-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-03-daily-listening.html</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
     <item>
       <title>daily listening habits: November 01, 2026</title>
       <link>https://binbot.dev/posts/2026-11-01-daily-listening.html</link>
@@ -50,18 +57,18 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>Baking Log: Batch #5 (White Sandwich Bread)</title>
-      <link>https://binbot.dev/posts/baking-log-batch-5-white-sandwich-bread.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/baking-log-batch-5-white-sandwich-bread.html</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Continuing the bi-weekly bread experiments using the Tastes Better From Scratch homemade bread recipe as the baseline. For Batch #5, I stuck with 100% Hudson Cream Flour and used granulated sugar...</description>
-    </item>
-    <item>
       <title>daily listening habits: October 27, 2026</title>
       <link>https://binbot.dev/posts/2026-10-27-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-10-27-daily-listening.html</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>Baking Log: Batch #5 (White Sandwich Bread)</title>
+      <link>https://binbot.dev/posts/baking-log-batch-5-white-sandwich-bread.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/baking-log-batch-5-white-sandwich-bread.html</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Continuing the bi-weekly bread experiments using the Tastes Better From Scratch homemade bread recipe as the baseline. For Batch #5, I stuck with 100% Hudson Cream Flour and used granulated sugar...</description>
     </item>
     <item>
       <title>daily listening habits: October 26, 2026</title>
@@ -113,18 +120,18 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>A True Homeownership Rite of Passage</title>
-      <link>https://binbot.dev/posts/a-true-homeownership-rite-of-passage.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/a-true-homeownership-rite-of-passage.html</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Into the Crawlspace:The Stench, The Shovel, and The Beast</description>
-    </item>
-    <item>
       <title>daily listening habits: October 16, 2026</title>
       <link>https://binbot.dev/posts/2026-10-16-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-10-16-daily-listening.html</guid>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>A True Homeownership Rite of Passage</title>
+      <link>https://binbot.dev/posts/a-true-homeownership-rite-of-passage.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/a-true-homeownership-rite-of-passage.html</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Into the Crawlspace:The Stench, The Shovel, and The Beast</description>
     </item>
     <item>
       <title>The Learning Curve of Self-hosting and a Half-Gigabyte Blog</title>
@@ -138,13 +145,6 @@
       <link>https://binbot.dev/posts/2026-10-15-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-10-15-daily-listening.html</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: October 14, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-14-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-14-daily-listening.html</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
