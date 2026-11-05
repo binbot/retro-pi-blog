@@ -28,7 +28,7 @@ You can already see the size difference here during the second rise in the pans:
 
 And once again, fresh out of the oven, it's pretty obvious which loaf got the short end of the deal:
 
-![Fresh out of the oven](/media/footo5.jpg)
+![Fresh out of the oven](/media/footo3.jpg)
 
 Here they are all buttered up and cooling down:
 
