@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 22:18:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 22:45:32 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily listening habits: November 04, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-04-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-04-daily-listening.html</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
     <item>
       <title>daily listening habits: November 03, 2026</title>
       <link>https://binbot.dev/posts/2026-11-03-daily-listening.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://binbot.dev/posts/the-learning-curve-of-self-hosting-and-a-half-gigabyte-blog.html</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description>Diagnosing an accidental 759 mb git folder, navigating the self-hosting learning curve, and wondering what happens when you force-push your own life.</description>
-    </item>
-    <item>
-      <title>daily listening habits: October 15, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-15-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-15-daily-listening.html</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
 </rss>
