@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 21:33:19 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 22:47:07 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily listening habits: November 06, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-06-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-06-daily-listening.html</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
     <item>
       <title>Baking Log: Batch #6 - (Honey White Sandwich Bread)</title>
       <link>https://binbot.dev/posts/baking-log-batch-6-honey-white-sandwich-bread.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://binbot.dev/posts/2026-10-19-daily-listening.html</guid>
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>A True Homeownership Rite of Passage</title>
-      <link>https://binbot.dev/posts/a-true-homeownership-rite-of-passage.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/a-true-homeownership-rite-of-passage.html</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Into the Crawlspace:The Stench, The Shovel, and The Beast</description>
     </item>
   </channel>
 </rss>
