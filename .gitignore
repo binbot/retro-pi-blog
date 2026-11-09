@@ -17,6 +17,8 @@ logs/
 *.swp
 *.tmp
 tmp/
+__pycache__/
+*.pyc
 
 # Sensitive files / SSH keys
 sh-ed25519

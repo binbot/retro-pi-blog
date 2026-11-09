@@ -22,10 +22,13 @@ rsync -avz --delete \
   --exclude="new-audio.sh" \
   --exclude="edit-post.sh" \
   --exclude="log-music.sh" \
+  --exclude="log-yoga.sh" \
   --exclude="scripts" \
   --exclude="deploy.sh" \
   --exclude="strip-media.sh" \
   --exclude="*.conf" \
+  --exclude="*.token" \
+  --exclude="*.env" \
   --exclude="deploy_guide.md" \
   --exclude="BLOG_GUIDE.md" \
   --exclude="README.md" \
