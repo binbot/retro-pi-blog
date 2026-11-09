@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 22:39:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 17:36:15 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily yoga practice: November 09, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-09-daily-yoga.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-09-daily-yoga.html</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Daily yoga practice log (32m, 100 poses + 7m meditation) recorded from Down Dog.</description>
+    </item>
     <item>
       <title>daily listening habits: November 07, 2026</title>
       <link>https://binbot.dev/posts/2026-11-07-daily-listening.html</link>
@@ -22,18 +29,18 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>Baking Log: Batch #6 - (Honey White Sandwich Bread)</title>
-      <link>https://binbot.dev/posts/baking-log-batch-6-honey-white-sandwich-bread.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/baking-log-batch-6-honey-white-sandwich-bread.html</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Back at it with another loaf (or two) following the trusty Tastes Better from Scratch baseline recipe. For this batch, I stuck with 100% Hudson Cream Flour and switched back to honey after using...</description>
-    </item>
-    <item>
       <title>daily listening habits: November 05, 2026</title>
       <link>https://binbot.dev/posts/2026-11-05-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-11-05-daily-listening.html</guid>
       <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>Baking Log: Batch #6 - (Honey White Sandwich Bread)</title>
+      <link>https://binbot.dev/posts/baking-log-batch-6-honey-white-sandwich-bread.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/baking-log-batch-6-honey-white-sandwich-bread.html</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Back at it with another loaf (or two) following the trusty Tastes Better from Scratch baseline recipe. For this batch, I stuck with 100% Hudson Cream Flour and switched back to honey after using...</description>
     </item>
     <item>
       <title>daily listening habits: November 04, 2026</title>
@@ -138,13 +145,6 @@
       <link>https://binbot.dev/posts/2026-10-21-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-10-21-daily-listening.html</guid>
       <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>daily listening habits: October 20, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-20-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-20-daily-listening.html</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
