@@ -1,5 +1,5 @@
 ---
-title: Baking Log: Batch #6 - (Honey White Sandwich Bread)
+title: Baking Log: Batch #6 (Honey White Sandwich Bread)
 date: 2026-11-05
 description: Brief description of Baking Log: Batch #6 - (Honey White Sandwich Bread)
 tags: blog, bread-log, honey, diy
