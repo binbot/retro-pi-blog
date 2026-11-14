@@ -22,7 +22,7 @@ If you want to catch up on the previous experiments in this series:
 
 ### The Variables
 
-Along with returning to 100% King Arthur Flour, I switched up the sweetener for this batch and introduced [Zulka Pure Cane Sugar](https://zulkasugar.com/producto/zulka-pure-cane-sugar/) rather than regular granulated sugar. To be honest, I'm not sure if the brand or cane sugar type actually makes a difference—I don't know much about sugar, but I bought it on a whim and thought I'd try it.
+Along with returning to 100% King Arthur Flour, I switched up the sweetener for this batch and introduced [Zulka Pure Cane Sugar](https://zulkasugar.com/producto/zulka-pure-cane-sugar/) rather than regular granulated sugar. To be honest, I'm not sure if the brand or cane sugar type actually makes a difference. I don't know much about sugar, but I bought it on a whim and thought I'd try it.
 
 ![sugar experiment](https://i.pinimg.com/originals/cd/90/ba/cd90bab1511079d7eb8ec024dd535b4f.gif)
 
