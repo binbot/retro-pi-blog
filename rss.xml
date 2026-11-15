@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 23:09:33 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 18:05:14 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily yoga practice: November 15, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-15-daily-yoga.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-15-daily-yoga.html</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Daily yoga practice log (34m, 107 poses + 10m meditation) recorded from Down Dog.</description>
+    </item>
     <item>
       <title>Baking Log: Batch #7 (White Sandwich Bread)</title>
       <link>https://binbot.dev/posts/baking-log-batch-7-white-sandwich-bread.html</link>
@@ -29,13 +36,6 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>daily listening habits: November 12, 2026</title>
-      <link>https://binbot.dev/posts/2026-11-12-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-12-daily-listening.html</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
       <title>daily yoga practice: November 12, 2026</title>
       <link>https://binbot.dev/posts/2026-11-12-daily-yoga.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-11-12-daily-yoga.html</guid>
@@ -43,11 +43,11 @@
       <description>Daily yoga practice log (34m, 98 poses + 7m meditation) recorded from Down Dog.</description>
     </item>
     <item>
-      <title>daily yoga practice: November 11, 2026</title>
-      <link>https://binbot.dev/posts/2026-11-11-daily-yoga.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-11-daily-yoga.html</guid>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Daily yoga practice log (54m, 103 poses + 7m meditation) recorded from Down Dog.</description>
+      <title>daily listening habits: November 12, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-12-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-12-daily-listening.html</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
       <title>daily listening habits: November 11, 2026</title>
@@ -55,6 +55,13 @@
       <guid isPermaLink="true">https://binbot.dev/posts/2026-11-11-daily-listening.html</guid>
       <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>daily yoga practice: November 11, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-11-daily-yoga.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-11-daily-yoga.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Daily yoga practice log (54m, 103 poses + 7m meditation) recorded from Down Dog.</description>
     </item>
     <item>
       <title>daily yoga practice: November 10, 2026</title>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://binbot.dev/posts/stargazing-at-the-keeble-observatory.html</guid>
       <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
       <description>Saturn is brilliant</description>
-    </item>
-    <item>
-      <title>daily listening habits: October 30, 2026</title>
-      <link>https://binbot.dev/posts/2026-10-30-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-10-30-daily-listening.html</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
 </rss>
