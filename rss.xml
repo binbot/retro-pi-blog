@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 22:05:43 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 14:35:17 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily yoga practice: November 19, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-19-daily-yoga.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-19-daily-yoga.html</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Daily yoga practice log (32m, 144 poses + 7m meditation) recorded from Down Dog.</description>
+    </item>
     <item>
       <title>daily yoga practice: November 18, 2026</title>
       <link>https://binbot.dev/posts/2026-11-18-daily-yoga.html</link>
@@ -22,18 +29,18 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>daily yoga practice: November 17, 2026</title>
-      <link>https://binbot.dev/posts/2026-11-17-daily-yoga.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-17-daily-yoga.html</guid>
-      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Daily yoga practice log (33m, 104 poses + 7m meditation) recorded from Down Dog.</description>
-    </item>
-    <item>
       <title>daily listening habits: November 17, 2026</title>
       <link>https://binbot.dev/posts/2026-11-17-daily-listening.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-11-17-daily-listening.html</guid>
       <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>daily yoga practice: November 17, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-17-daily-yoga.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-17-daily-yoga.html</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Daily yoga practice log (33m, 104 poses + 7m meditation) recorded from Down Dog.</description>
     </item>
     <item>
       <title>daily listening habits: November 16, 2026</title>
@@ -71,13 +78,6 @@
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
-      <title>daily listening habits: November 12, 2026</title>
-      <link>https://binbot.dev/posts/2026-11-12-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-12-daily-listening.html</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
       <title>daily yoga practice: November 12, 2026</title>
       <link>https://binbot.dev/posts/2026-11-12-daily-yoga.html</link>
       <guid isPermaLink="true">https://binbot.dev/posts/2026-11-12-daily-yoga.html</guid>
@@ -85,11 +85,11 @@
       <description>Daily yoga practice log (34m, 98 poses + 7m meditation) recorded from Down Dog.</description>
     </item>
     <item>
-      <title>daily yoga practice: November 11, 2026</title>
-      <link>https://binbot.dev/posts/2026-11-11-daily-yoga.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-11-daily-yoga.html</guid>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Daily yoga practice log (54m, 103 poses + 7m meditation) recorded from Down Dog.</description>
+      <title>daily listening habits: November 12, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-12-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-12-daily-listening.html</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
       <title>daily listening habits: November 11, 2026</title>
@@ -97,6 +97,13 @@
       <guid isPermaLink="true">https://binbot.dev/posts/2026-11-11-daily-listening.html</guid>
       <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
+    <item>
+      <title>daily yoga practice: November 11, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-11-daily-yoga.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-11-daily-yoga.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Daily yoga practice log (54m, 103 poses + 7m meditation) recorded from Down Dog.</description>
     </item>
     <item>
       <title>daily yoga practice: November 10, 2026</title>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://binbot.dev/posts/2026-11-05-daily-listening.html</guid>
       <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
       <description>Automated daily listening transmission recorded from Navidrome music server.</description>
-    </item>
-    <item>
-      <title>Baking Log: Batch #6 (Honey White Sandwich Bread)</title>
-      <link>https://binbot.dev/posts/baking-log-batch-6-honey-white-sandwich-bread.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/baking-log-batch-6-honey-white-sandwich-bread.html</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Back at it with another loaf (or two) following the trusty Tastes Better from Scratch baseline recipe. For this batch, I stuck with 100% Hudson Cream Flour and switched back to honey after using...</description>
     </item>
   </channel>
 </rss>
