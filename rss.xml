@@ -5,7 +5,7 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 16:24:41 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 22:05:43 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>daily yoga practice: November 18, 2026</title>
@@ -13,6 +13,13 @@
       <guid isPermaLink="true">https://binbot.dev/posts/2026-11-18-daily-yoga.html</guid>
       <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
       <description>Daily yoga practice log (34m, 123 poses + 10m meditation) recorded from Down Dog.</description>
+    </item>
+    <item>
+      <title>daily listening habits: November 18, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-18-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-18-daily-listening.html</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
     <item>
       <title>daily yoga practice: November 17, 2026</title>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://binbot.dev/posts/baking-log-batch-6-honey-white-sandwich-bread.html</guid>
       <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
       <description>Back at it with another loaf (or two) following the trusty Tastes Better from Scratch baseline recipe. For this batch, I stuck with 100% Hudson Cream Flour and switched back to honey after using...</description>
-    </item>
-    <item>
-      <title>daily listening habits: November 04, 2026</title>
-      <link>https://binbot.dev/posts/2026-11-04-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-04-daily-listening.html</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
 </rss>
