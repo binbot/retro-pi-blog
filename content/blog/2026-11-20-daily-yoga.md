@@ -23,7 +23,7 @@ slug: 2026-11-20-daily-yoga
 
 ## 02. practice notes
 
-Plenty of energy today meeting today's challenges: revolved open arms chair, revolved open arms lunge.
+Plenty of energy meeting today's challenges: revolved open arms chair, revolved open arms lunge.
 
 ## 03. pose sequence
 
