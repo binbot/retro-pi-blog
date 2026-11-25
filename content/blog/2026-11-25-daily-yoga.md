@@ -17,7 +17,7 @@ slug: 2026-11-25-daily-yoga
   LEVEL:           Intermediate
   BOOSTS:          Hand Wrist and Arm
   MEDITATION 1:    7m — Self Care (Noticing Sounds)
-  MEDITATION 2:    10m — Self Care (Playing with Your Pace, Playing with Your Pace)
+  MEDITATION 2:    10m — Self Care (Playing with Your Pace)
   SOURCE:          down dog (downdogapp.com)
 ==================================================
 ```
