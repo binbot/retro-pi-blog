@@ -5,8 +5,15 @@
     <link>https://binbot.dev/blog/</link>
     <description>A lightweight digital outpost hosted on a retro Raspberry Pi.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 23:22:39 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 23:32:13 GMT</lastBuildDate>
     <atom:link href="https://binbot.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>daily listening habits: November 27, 2026</title>
+      <link>https://binbot.dev/posts/2026-11-27-daily-listening.html</link>
+      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-27-daily-listening.html</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
+    </item>
     <item>
       <title>daily listening habits: November 26, 2026</title>
       <link>https://binbot.dev/posts/2026-11-26-daily-listening.html</link>
@@ -139,13 +146,6 @@
       <guid isPermaLink="true">https://binbot.dev/posts/baking-log-batch-7-white-sandwich-bread.html</guid>
       <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
       <description>Time for another bread-log post! Here we are at Batch #7 of the ongoing quest to dial in the ultimate white sandwich bread using the baseline Tastes Better from Scratch recipe, and for this batch...</description>
-    </item>
-    <item>
-      <title>daily listening habits: November 14, 2026</title>
-      <link>https://binbot.dev/posts/2026-11-14-daily-listening.html</link>
-      <guid isPermaLink="true">https://binbot.dev/posts/2026-11-14-daily-listening.html</guid>
-      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Automated daily listening transmission recorded from Navidrome music server.</description>
     </item>
   </channel>
 </rss>
